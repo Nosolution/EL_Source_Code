@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visible="true"
+    android:oneshot="true">
+
+    <item android:drawable="@drawable/circle"
+        android:duration="50"></item>
+
+    <item android:drawable="@drawable/circle2"
+        android:duration="50"></item>
+
+</animation-list>

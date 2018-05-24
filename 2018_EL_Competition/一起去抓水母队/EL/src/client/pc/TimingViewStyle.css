@@ -1,0 +1,33 @@
+/*"STXiHei"用以通用 "Microsoft YaHei"用以兼容Windows "Heiti SC"用以兼容MacOS和iOS "WenQuanYi Micro Hei"用以兼容Linux*/
+* {
+    -fx-font-family: "STXiHei", "Microsoft YaHei", "Heiti SC", "WenQuanYi Micro Hei";
+}
+.root {
+    -fx-background-image: url("image/timing/background.png");
+    -fx-background-size: stretch;
+}
+#time {
+    -fx-alignment: center;
+    -fx-font-size: 100px;
+    -fx-text-fill: white;
+}
+#musicTip{
+    -fx-alignment: center;
+    -fx-font-size:17px;
+    -fx-text-fill: white;
+}
+#slider {
+    -fx-translate-y: -50px;
+}
+#music:hover {
+    -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 1) ;
+}
+#pause:hover {
+    -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 1) ;
+}
+#stop:hover {
+    -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 1) ;
+}
+#volume:hover {
+    -fx-effect:dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 1) ;
+}

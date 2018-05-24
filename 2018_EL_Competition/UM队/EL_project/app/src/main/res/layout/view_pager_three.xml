@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/viewpager3">
+
+	<TextView
+		android:id="@+id/words"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="175dp"
+		android:layout_centerHorizontal="true"
+		android:gravity="end"
+		android:text="@string/words"
+		android:textSize="18sp"
+		android:lineSpacingExtra="8dp"/>
+
+	<!--<TextView-->
+		<!--android:layout_width="wrap_content"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_alignParentBottom="true"-->
+		<!--android:layout_marginBottom="160dp"-->
+		<!--android:layout_toEndOf="@id/words"-->
+		<!--android:layout_-->
+		<!--android:text="——屈原《离骚》"-->
+		<!--android:textSize="18sp"/>-->
+
+
+</RelativeLayout>

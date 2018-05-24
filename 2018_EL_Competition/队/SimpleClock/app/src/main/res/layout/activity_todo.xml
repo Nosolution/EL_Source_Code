@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoActivity"
+    android:background="@mipmap/diary_page"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8">
+
+                    <TextView
+                        android:id="@+id/todo_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待办事项"
+                        android:textColor="#fff"
+                        android:textSize="32sp"
+                        android:fontFamily="@font/pingf_reg"/>
+
+                    <TextView
+                        android:id="@+id/todo_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/todo_title"
+                        android:layout_marginTop="4dp"
+                        android:text="7个事项"
+                        android:textColor="#8d8a8a"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/pingf_reg"/>
+
+                    <TextView
+                        android:id="@+id/todo_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/todo_title"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/todo_left"
+                        android:layout_marginTop="4dp"
+                        android:text="共25分钟"
+                        android:textColor="#8d8a8a"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/pingf_reg"/>
+                </RelativeLayout>
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:id="@+id/editText"
+                style="?android:attr/textViewStyle"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="创建新的待办事项"
+                android:fontFamily="@font/pingf_reg"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/time_text"
+                style="?android:attr/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_toEndOf="@+id/editText"
+                android:layout_marginStart="15dp"
+                android:background="@mipmap/small_label"
+                android:fontFamily="@font/pingf_reg"
+                android:gravity="center"
+                android:hint="专注时间"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/todo_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#11000000"
+                android:layout_toEndOf="@+id/editText"
+                android:layout_marginStart="15dp"
+                android:layout_below="@id/time_text"
+                android:layout_marginTop="6dp"
+                app:srcCompat="@mipmap/small_label" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添 加"
+                android:fontFamily="@font/pingf_reg"
+                android:layout_toEndOf="@+id/editText"
+                android:layout_marginStart="43dp"
+                android:layout_below="@id/time_text"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/todolist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:overScrollFooter="@android:color/transparent"
+        android:overScrollHeader="@android:color/transparent"
+        android:overScrollMode="never"
+        android:background="#78000000" />
+
+    <ImageButton
+        android:id="@+id/todo_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:background="#11000000"
+        app:srcCompat="@mipmap/back_green" />
+
+
+
+
+
+
+
+</LinearLayout>

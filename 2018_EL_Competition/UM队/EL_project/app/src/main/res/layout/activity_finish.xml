@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_finish_layout"
+	android:layout_width="wrap_content"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/background1">
+
+	<ScrollView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView
+				android:id="@+id/tv_scores"
+				android:layout_width="130dp"
+				android:layout_height="130dp"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:layout_marginTop="40dp"
+				android:background="@mipmap/circle_white_250"
+				android:textSize="25sp"
+				android:textColor="@color/background"/>
+
+			<TextView
+				android:id="@+id/tv_task_consumed_time"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="20dp"
+				android:textSize="16sp"
+				android:textColor="@color/background"/>
+
+			<TextView
+				android:id="@+id/tv_task_concentrate_time"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="8dp"
+				android:textSize="16sp"
+				android:textColor="@color/background"/>
+
+			<TextView
+				android:id="@+id/tv_suggestion"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:gravity="center"
+				android:text="@string/my_suggestion"
+				android:textColor="@color/white"
+				android:textSize="14sp" />
+
+			<TextView
+				android:id="@+id/tv_today_concentrate_time"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:layout_marginTop="8dp"
+				android:textSize="14sp"
+				android:textColor="@color/half_white"/>
+
+
+			<com.github.mikephil.charting.charts.BarChart
+				android:id="@+id/data_bar_chart"
+				android:layout_width="match_parent"
+				android:layout_height="220dp"
+				android:background="@mipmap/circle_white_250" />
+
+			<Button
+				android:id="@+id/button_share_to_qzone"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="15dp"
+				android:gravity="center_vertical"
+				android:paddingStart="20dp"
+				android:drawablePadding="10dp"
+				android:text="分享到QQ空间"
+				android:textSize="18sp"
+				android:background="@drawable/finish_activity_button_normal_shape"
+				android:textColor="@color/background"
+				android:drawableStart="@mipmap/share"/>
+
+			<Button
+				android:id="@+id/button_return_main"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="15dp"
+				android:gravity="center_vertical"
+				android:paddingStart="20dp"
+				android:drawablePadding="10dp"
+				android:text="返回主界面"
+				android:textSize="18sp"
+				android:background="@drawable/finish_activity_button_normal_shape"
+				android:textColor="@color/background"
+				android:drawableStart="@mipmap/arrow_left_white"/>
+
+
+			<Button
+				android:id="@+id/button_next_task"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_vertical"
+				android:paddingStart="20dp"
+				android:drawablePadding="10dp"
+				android:text="开始下一项"
+				android:textSize="18sp"
+				android:background="@drawable/finish_activity_button_normal_shape"
+				android:textColor="@color/background"
+				android:drawableStart="@mipmap/arrow_down_white"/>
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/recycler_view"
+				android:layout_marginTop="8dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:dividerHeight="10dip"/>
+
+		</LinearLayout>
+
+
+	</ScrollView>
+</LinearLayout>

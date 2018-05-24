@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="Database" ></dbname>
+
+    <version value="1" ></version>
+
+    <list>
+        <mapping class="com.example.user.simpleclock.RecordTime"></mapping>
+        <mapping class="com.example.user.simpleclock.RecordDiary"></mapping>
+        <mapping class="com.example.user.simpleclock.TodoDatabase"></mapping>
+    </list>
+</litepal>

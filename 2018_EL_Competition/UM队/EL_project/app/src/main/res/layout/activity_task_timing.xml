@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--抽屉布局，计时及设置界面-->
+<android.support.v4.widget.DrawerLayout
+	android:id="@+id/activity_task_timing_drawer_layout"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".TaskTimingActivity">
+
+
+<!--计时界面-->
+	<LinearLayout
+		android:id="@+id/activity_task_timing_linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@drawable/background1">
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/setting_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="@android:color/transparent"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+			app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+			app:title="@string/task2" />
+		<!--TODO:待改动显示内容-->
+
+		<!--在这里写界面-->
+
+		<RelativeLayout
+			android:id="@+id/time_act"
+			android:layout_width="400dp"
+			android:layout_height="400dp"
+			android:layout_gravity="center">
+
+			<ImageView
+				android:id="@+id/image_dial"
+				android:layout_width="266dp"
+				android:layout_height="266dp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" />
+
+			<com.example.el_project.CircleProgress
+				android:id="@+id/cp1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:bigCircleColor="@android:color/transparent"
+				app:circleColor="@android:color/transparent"
+				app:ringColor="@color/orange"
+				app:radius="120dp"
+				app:strokeWidth="3dp"/>
+
+			<com.example.el_project.CircleProgress
+				android:id="@+id/cp_break"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:bigCircleColor="@android:color/transparent"
+				app:circleColor="@android:color/transparent"
+				app:radius="120dp"
+				app:ringColor="#bb94e1dc"
+				app:strokeWidth="3dp" />
+
+			<com.example.el_project.CircleProgress
+				android:id="@+id/cp2"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:bigCircleColor="@android:color/transparent"
+				app:circleColor="@android:color/transparent"
+				app:ringColor="@color/half_white"
+				app:radius="117dp"
+				app:strokeWidth="1dp"/>
+
+
+			<TextView
+				android:id="@+id/time_action"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="00:00:00"
+				style="@style/doingtask"
+				android:layout_marginTop="150dp"
+				android:layout_centerHorizontal="true"/>
+
+			<RelativeLayout
+				android:id="@+id/layout_left_time_to_finish"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/time_action"
+				android:layout_centerHorizontal="true">
+
+				<TextView
+					android:id="@+id/text_left_to_time_left"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/time31"
+					android:textColor="@color/white"
+					android:textSize="32sp" />
+
+				<TextView
+					android:id="@+id/time_left_to_finish"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/text_left_to_time_left"
+					android:text="@string/time32"
+					android:textColor="@color/white"
+					android:textSize="18sp" />
+
+				<TextView
+					android:id="@+id/text_below_time_left"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/time_left_to_finish"
+					android:layout_toRightOf="@id/text_left_to_time_left"
+					android:text="@string/time33"
+					android:textColor="@color/white"
+					android:textSize="14sp" />
+			</RelativeLayout>
+
+		</RelativeLayout>
+<!--三个按钮-->
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="10dp">
+
+			<ImageButton
+				android:id="@+id/give_up_button"
+				style="@style/imagebutton"
+				android:background="@drawable/giveup"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="30dp"/>
+
+			<ImageButton
+				android:id="@+id/pause_button"
+				style="@style/imagebutton"
+				android:background="@drawable/doing"
+				android:layout_centerHorizontal="true"/>
+
+			<ImageButton
+				android:id="@+id/finish_button"
+				style="@style/imagebutton"
+				android:background="@drawable/end"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="30dp"/>
+		</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_marginTop="10dp">
+
+			<LinearLayout
+				android:id="@+id/layout_remark"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:orientation="vertical">
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="0.5dp"
+					android:background="@color/half_white"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="20dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp">
+				</View>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/edit2"
+					android:textSize="15dp"
+					android:textColor="@color/white"
+					android:layout_marginLeft="30dp"
+					android:layout_marginTop="5dp"/>
+
+				<TextView
+					android:id="@+id/edit_remark"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/edit3"
+					android:layout_marginLeft="40dp"
+					android:layout_marginTop="5dp"
+					android:layout_marginRight="20dp"
+					android:maxEms="35"
+					android:ellipsize="end"
+					android:singleLine="true"
+					android:textColor="@color/white"/>
+
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<!--右侧布局-->
+	<RelativeLayout
+		android:id="@+id/activity_task_timing_setting_drawer"
+		android:layout_width="230dp"
+		android:layout_height="match_parent"
+		android:layout_gravity="end"
+		android:clickable="true"
+		android:background="#E6D1D1D1">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<RelativeLayout
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/activity_task_timing_setting_upper"
+				android:layout_width="match_parent"
+				android:layout_height="150dp"
+				android:padding="10dp"
+				android:background="@drawable/setting_background">
+
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/icon_image"
+					android:layout_width="70dp"
+					android:layout_height="70dp"
+					android:src="@drawable/set_white"
+					android:layout_centerInParent="true"/>
+			</RelativeLayout>
+
+			<!--音乐-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<ImageView
+						android:id="@+id/img_if_music_on"
+						android:layout_width="18dp"
+						android:layout_height="18dp"
+						android:layout_margin="5dp"
+						android:scaleType="center"
+						android:background="@drawable/music_white" />
+
+					<TextView
+						android:id="@+id/text_if_music_on"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="30dp"
+						android:scaleType="center"
+						android:text="@string/string_if_music_on"
+						android:textSize="18sp"
+						android:textColor="@color/background"/>
+
+					<Switch
+						android:id="@+id/switch_if_music_on"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true" />
+				</RelativeLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<!--随机切歌按钮-->
+
+				<Button
+					android:id="@+id/bt_change_music"
+					android:layout_width="wrap_content"
+					android:layout_height="30dp"
+					android:layout_gravity="end"
+					android:layout_marginEnd="5dp"
+					android:layout_marginBottom="4dp"
+					android:text="切换歌曲"
+					android:textSize="14sp"
+					android:textColor="@color/background"
+					android:background="@drawable/button_background_selector"
+					android:visibility="gone"/>
+			</LinearLayout>
+
+			<!--插入分割线-->
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1.5dp"
+				android:background="@color/split_line">
+			</View>
+
+			<!--番茄钟-->
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:layout_marginTop="5dp"
+				android:orientation="horizontal">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<ImageView
+						android:id="@+id/img_if_tomato_clock_on"
+						android:layout_width="18dp"
+						android:layout_height="18dp"
+						android:layout_margin="5dp"
+						android:scaleType="center"
+						android:background="@drawable/clock_white"/>
+
+					<TextView
+						android:id="@+id/text_if_tomato_clock_on"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="30dp"
+						android:text="@string/string_if_tomato_clock_on"
+						android:textSize="18sp"
+						android:textColor="@color/background"/>
+
+					<Switch
+						android:id="@+id/switch_if_tomato_clock_on"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true" />
+				</RelativeLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/task_timing_clock_set_time"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:orientation="horizontal"
+				android:focusable="true"
+				android:clickable="true">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="30dp"
+						android:text="@string/string_tomato_clock_on"
+						android:textSize="18sp"
+						android:textColor="@color/background"/>
+
+
+					<TextView
+						android:id="@+id/text_choose_time"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						android:layout_marginEnd="30dp"
+						android:text="时长"
+						android:textSize="14sp"/>
+
+
+				</RelativeLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/task_timing_break_clock_set_time"
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:orientation="horizontal"
+				android:focusable="true"
+				android:clickable="true">
+
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="30dp"
+						android:text="@string/choose_break_time"
+						android:textSize="18sp"
+						android:textColor="@color/background"/>
+
+
+					<TextView
+						android:id="@+id/text_choose_break_time"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						android:layout_marginEnd="30dp"
+						android:text="时长"
+						android:textSize="14sp"/>
+
+				</RelativeLayout>
+			</LinearLayout>
+
+
+		</LinearLayout>
+	</RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

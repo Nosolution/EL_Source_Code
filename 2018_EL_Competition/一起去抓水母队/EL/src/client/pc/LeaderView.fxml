@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@LeaderViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.LeaderViewController">
+    <ImageView fx:id="back" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#clickBack" pickOnBounds="true">
+        <Image url="@image/schedule/back.png" />
+    </ImageView>
+    <Label fx:id="mode" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+    <ImageView fx:id="astronomy" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <Image url="@image/schedule/course/astronomy.png" />
+    </ImageView>
+    <ImageView fx:id="careOfMagicalCreatures" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/schedule/course/careOfMagicalCreatures.png" />
+    </ImageView>
+    <ImageView fx:id="charms" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/schedule/course/charms.png" />
+    </ImageView>
+    <ImageView fx:id="defenceAgainstTheDarkArts" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+        <Image url="@image/schedule/course/defenceAgainstTheDarkArts.png" />
+    </ImageView>
+    <ImageView fx:id="divination" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="3">
+        <Image url="@image/schedule/course/divination.png" />
+    </ImageView>
+    <ImageView fx:id="flyingLessons" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+        <Image url="@image/schedule/course/flyingLessons.png" />
+    </ImageView>
+    <ImageView fx:id="herbology" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="4">
+        <Image url="@image/schedule/course/herbology.png" />
+    </ImageView>
+    <ImageView fx:id="historyOfMagic" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+        <Image url="@image/schedule/course/historyOfMagic.png" />
+    </ImageView>
+    <ImageView fx:id="muggleStudies" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5">
+        <Image url="@image/schedule/course/muggleStudies.png" />
+    </ImageView>
+    <ImageView fx:id="potions" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6">
+        <Image url="@image/schedule/course/potions.png" />
+    </ImageView>
+    <ImageView fx:id="transfiguration" fitHeight="90.0" fitWidth="180.0" onDragDetected="#dragDetectedCourse" onMouseClicked="#clickCourse" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="6">
+        <Image url="@image/schedule/course/transfiguration.png" />
+    </ImageView>
+    <Label fx:id="member0" text="empty" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <Label fx:id="member1" text="empty" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+    <Label fx:id="member2" text="empty" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+    <Label fx:id="member3" text="empty" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+    <ImageView fx:id="kick1" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#clickKick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+        <Image url="@image/schedule/kick.png" />
+    </ImageView>
+    <ImageView fx:id="kick2" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#clickKick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="7">
+        <Image url="@image/schedule/kick.png" />
+    </ImageView>
+    <ImageView fx:id="kick3" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#clickKick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="7">
+        <Image url="@image/schedule/kick.png" />
+    </ImageView>
+    <ImageView fx:id="curriculumSchedule" fitHeight="60" fitWidth="600" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.columnSpan="4" GridPane.rowIndex="1">
+        <Image url="@image/schedule/curriculumSchedule.png" />
+    </ImageView>
+    <ImageView fx:id="empty1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/empty.png" />
+    </ImageView>
+    <ImageView fx:id="astronomy1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/astronomy.png" />
+    </ImageView>
+    <ImageView fx:id="careOfMagicalCreatures1" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/careOfMagicalCreatures.png" />
+    </ImageView>
+    <ImageView fx:id="charms1" fitHeight="40.0"  onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/charms.png" />
+    </ImageView>
+    <ImageView fx:id="defenceAgainstTheDarkArts1" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/defenceAgainstTheDarkArts.png" />
+    </ImageView>
+    <ImageView fx:id="divination1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/divination.png" />
+    </ImageView>
+    <ImageView fx:id="flyingLessons1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/flyingLessons.png" />
+    </ImageView>
+    <ImageView fx:id="herbology1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/herbology.png" />
+    </ImageView>
+    <ImageView fx:id="historyOfMagic1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/historyOfMagic.png" />
+    </ImageView>
+    <ImageView fx:id="muggleStudies1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/muggleStudies.png" />
+    </ImageView>
+    <ImageView fx:id="potions1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/potions.png" />
+    </ImageView>
+    <ImageView fx:id="transfiguration1" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="2">
+        <Image url="@image/schedule/lesson/transfiguration.png" />
+    </ImageView>
+    <ImageView fx:id="empty2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/empty.png" />
+    </ImageView>
+    <ImageView fx:id="astronomy2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/astronomy.png" />
+    </ImageView>
+    <ImageView fx:id="careOfMagicalCreatures2" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/careOfMagicalCreatures.png" />
+    </ImageView>
+    <ImageView fx:id="charms2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/charms.png" />
+    </ImageView>
+    <ImageView fx:id="defenceAgainstTheDarkArts2" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/defenceAgainstTheDarkArts.png" />
+    </ImageView>
+    <ImageView fx:id="divination2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/divination.png" />
+    </ImageView>
+    <ImageView fx:id="flyingLessons2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/flyingLessons.png" />
+    </ImageView>
+    <ImageView fx:id="herbology2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/herbology.png" />
+    </ImageView>
+    <ImageView fx:id="historyOfMagic2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/historyOfMagic.png" />
+    </ImageView>
+    <ImageView fx:id="muggleStudies2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/muggleStudies.png" />
+    </ImageView>
+    <ImageView fx:id="potions2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/potions.png" />
+    </ImageView>
+    <ImageView fx:id="transfiguration2" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="3">
+        <Image url="@image/schedule/lesson/transfiguration.png" />
+    </ImageView>
+    <ImageView fx:id="empty3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/empty.png" />
+    </ImageView>
+    <ImageView fx:id="astronomy3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/astronomy.png" />
+    </ImageView>
+    <ImageView fx:id="careOfMagicalCreatures3" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/careOfMagicalCreatures.png" />
+    </ImageView>
+    <ImageView fx:id="charms3"  fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/charms.png" />
+    </ImageView>
+    <ImageView fx:id="defenceAgainstTheDarkArts3" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/defenceAgainstTheDarkArts.png" />
+    </ImageView>
+    <ImageView fx:id="divination3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/divination.png" />
+    </ImageView>
+    <ImageView fx:id="flyingLessons3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/flyingLessons.png" />
+    </ImageView>
+    <ImageView fx:id="herbology3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/herbology.png" />
+    </ImageView>
+    <ImageView fx:id="historyOfMagic3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/historyOfMagic.png" />
+    </ImageView>
+    <ImageView fx:id="muggleStudies3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/muggleStudies.png" />
+    </ImageView>
+    <ImageView fx:id="potions3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/potions.png" />
+    </ImageView>
+    <ImageView fx:id="transfiguration3" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="4">
+        <Image url="@image/schedule/lesson/transfiguration.png" />
+    </ImageView>
+    <ImageView fx:id="empty4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/empty.png" />
+    </ImageView>
+    <ImageView fx:id="astronomy4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/astronomy.png" />
+    </ImageView>
+    <ImageView fx:id="careOfMagicalCreatures4" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/careOfMagicalCreatures.png" />
+    </ImageView>
+    <ImageView fx:id="charms4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/charms.png" />
+    </ImageView>
+    <ImageView fx:id="defenceAgainstTheDarkArts4" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/defenceAgainstTheDarkArts.png" />
+    </ImageView>
+    <ImageView fx:id="divination4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/divination.png" />
+    </ImageView>
+    <ImageView fx:id="flyingLessons4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/flyingLessons.png" />
+    </ImageView>
+    <ImageView fx:id="herbology4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/herbology.png" />
+    </ImageView>
+    <ImageView fx:id="historyOfMagic4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/historyOfMagic.png" />
+    </ImageView>
+    <ImageView fx:id="muggleStudies4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/muggleStudies.png" />
+    </ImageView>
+    <ImageView fx:id="potions4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/potions.png" />
+    </ImageView>
+    <ImageView fx:id="transfiguration4" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="5">
+        <Image url="@image/schedule/lesson/transfiguration.png" />
+    </ImageView>
+    <ImageView fx:id="empty5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/empty.png" />
+    </ImageView>
+    <ImageView fx:id="astronomy5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/astronomy.png" />
+    </ImageView>
+    <ImageView fx:id="careOfMagicalCreatures5" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/careOfMagicalCreatures.png" />
+    </ImageView>
+    <ImageView fx:id="charms5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/charms.png" />
+    </ImageView>
+    <ImageView fx:id="defenceAgainstTheDarkArts5" fitWidth="480.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/defenceAgainstTheDarkArts.png" />
+    </ImageView>
+    <ImageView fx:id="divination5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/divination.png" />
+    </ImageView>
+    <ImageView fx:id="flyingLessons5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/flyingLessons.png" />
+    </ImageView>
+    <ImageView fx:id="herbology5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/herbology.png" />
+    </ImageView>
+    <ImageView fx:id="historyOfMagic5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/historyOfMagic.png" />
+    </ImageView>
+    <ImageView fx:id="muggleStudies5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/muggleStudies.png" />
+    </ImageView>
+    <ImageView fx:id="potions5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/potions.png" />
+    </ImageView>
+    <ImageView fx:id="transfiguration5" fitHeight="40.0" onDragDropped="#dragDroppedLesson" onDragOver="#dragOverLesson" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="6" GridPane.rowIndex="6">
+        <Image url="@image/schedule/lesson/transfiguration.png" />
+    </ImageView>
+    <ImageView fx:id="cancel1" onMouseClicked="#clickCancel" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="2">
+        <Image url="@image/schedule/cancel.png" />
+    </ImageView>
+    <ImageView fx:id="cancel2" onMouseClicked="#clickCancel" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="3">
+        <Image url="@image/schedule/cancel.png" />
+    </ImageView>
+    <ImageView fx:id="cancel3" onMouseClicked="#clickCancel" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="4">
+        <Image url="@image/schedule/cancel.png" />
+    </ImageView>
+    <ImageView fx:id="cancel4" onMouseClicked="#clickCancel" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="5">
+        <Image url="@image/schedule/cancel.png" />
+    </ImageView>
+    <ImageView fx:id="cancel5" onMouseClicked="#clickCancel" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="6">
+        <Image url="@image/schedule/cancel.png" />
+    </ImageView>
+    <ImageView fx:id="up1" onMouseClicked="#clickUp" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="8" GridPane.rowIndex="2">
+        <Image url="@image/schedule/up.png" />
+    </ImageView>
+    <ImageView fx:id="up2" onMouseClicked="#clickUp" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="8" GridPane.rowIndex="3">
+        <Image url="@image/schedule/up.png" />
+    </ImageView>
+    <ImageView fx:id="up3" onMouseClicked="#clickUp" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="8" GridPane.rowIndex="4">
+        <Image url="@image/schedule/up.png" />
+    </ImageView>
+    <ImageView fx:id="up4" onMouseClicked="#clickUp" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="8" GridPane.rowIndex="5">
+        <Image url="@image/schedule/up.png" />
+    </ImageView>
+    <ImageView fx:id="up5" onMouseClicked="#clickUp" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="8" GridPane.rowIndex="6">
+        <Image url="@image/schedule/up.png" />
+    </ImageView>
+    <ImageView fx:id="down1" onMouseClicked="#clickDown" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="9" GridPane.rowIndex="2">
+        <Image url="@image/schedule/down.png" />
+    </ImageView>
+    <ImageView fx:id="down2" onMouseClicked="#clickDown" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="9" GridPane.rowIndex="3">
+        <Image url="@image/schedule/down.png" />
+    </ImageView>
+    <ImageView fx:id="down3" onMouseClicked="#clickDown" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="9" GridPane.rowIndex="4">
+        <Image url="@image/schedule/down.png" />
+    </ImageView>
+    <ImageView fx:id="down4" onMouseClicked="#clickDown" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="9" GridPane.rowIndex="5">
+        <Image url="@image/schedule/down.png" />
+    </ImageView>
+    <ImageView fx:id="down5" onMouseClicked="#clickDown" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="9" GridPane.rowIndex="6">
+        <Image url="@image/schedule/down.png" />
+    </ImageView>
+    <ImageView fx:id="submit" fitHeight="55.0" fitWidth="202.0" onMouseClicked="#clickSubmit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="7">
+        <Image url="@image/schedule/submit.png" />
+    </ImageView>
+    <ImageView fx:id="reset" fitHeight="83.0" fitWidth="162.0" onMouseClicked="#clickReset" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.columnSpan="3" GridPane.rowIndex="7">
+        <Image url="@image/schedule/reset.png" />
+    </ImageView>
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" percentWidth="5.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="3.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="44.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="9.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="3.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="3.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="5.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="8.0" valignment="CENTER" />
+        <RowConstraints percentHeight="12.0" valignment="CENTER" />
+        <RowConstraints percentHeight="12.0" valignment="CENTER" />
+        <RowConstraints percentHeight="12.0" valignment="CENTER" />
+        <RowConstraints percentHeight="12.0" valignment="CENTER" />
+        <RowConstraints percentHeight="12.0" valignment="CENTER" />
+        <RowConstraints percentHeight="12.0" valignment="CENTER" />
+        <RowConstraints percentHeight="12.0" valignment="CENTER" />
+        <RowConstraints percentHeight="8.0" valignment="CENTER" />
+    </rowConstraints>
+</GridPane>

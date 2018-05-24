@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="pane" onMouseClicked="#showThings" prefHeight="720.0" prefWidth="1280.0" stylesheets="@LoadingViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.LoadingViewController">
+    <ImageView fx:id="signin" onMouseClicked="#clickSignin" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Image url="@image/loading/signin.png" />
+    </ImageView>
+    <ImageView fx:id="login" onMouseClicked="#clickLogin" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Image url="@image/loading/login.png" />
+    </ImageView>
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20.0" halignment="CENTER" />
+        <ColumnConstraints percentWidth="60.0" halignment="CENTER" />
+        <ColumnConstraints percentWidth="20.0" halignment="CENTER" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+    </rowConstraints>
+</GridPane>

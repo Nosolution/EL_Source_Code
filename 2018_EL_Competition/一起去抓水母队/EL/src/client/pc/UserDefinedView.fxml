@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" stylesheets="@UserDefinedViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.UserDefinedViewController">
+    <ImageView pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1">
+        <Image url="@image/userDefined/title.png"/>
+    </ImageView>
+    <ImageView pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/userDefined/choose.png"/>
+    </ImageView>
+    <ImageView pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Image url="@image/userDefined/rectangle.png"/>
+    </ImageView>
+    <ComboBox fx:id="time" promptText="选择合适时间" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="25 minutes" />
+                <String fx:value="30 minutes" />
+                <String fx:value="35 minutes" />
+                <String fx:value="40 minutes" />
+                <String fx:value="45 minutes" />
+                <String fx:value="50 minutes" />
+                <String fx:value="55 minutes" />
+                <String fx:value="60 minutes" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Label fx:id="submit" onMouseClicked="#clickSubmit" text="Submit" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Label fx:id="cancel" onMouseClicked="#clickCancel" text="Cancel" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" percentWidth="10.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="20.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="40.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="20.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="20.0" valignment="CENTER" />
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+    </rowConstraints>
+</GridPane>

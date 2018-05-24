@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:paddingLeft="30dp">
+
+
+
+    <TextView
+        android:id="@+id/focus_record_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:text="5月6日"
+        android:fontFamily="@font/pingf_reg"/>
+
+    
+
+
+    <TextView
+        android:id="@+id/focus_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="22sp"
+        android:textColor="#808080"
+        android:layout_marginLeft="44dp"
+        android:text="5分钟"
+        android:fontFamily="@font/pingf_reg"/>
+
+
+
+</LinearLayout>

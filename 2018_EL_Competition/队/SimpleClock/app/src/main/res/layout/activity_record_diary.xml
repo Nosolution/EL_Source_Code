@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/diary_page">
+
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/record_diary_layout"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="135dp"
+        android:overScrollFooter="@android:color/transparent"
+        android:overScrollHeader="@android:color/transparent"
+        android:overScrollMode="never"
+        android:background="#78000000"/>
+
+    <TextView
+        android:id="@+id/record_diary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="37dp"
+        android:text="今天"
+        android:textColor="#fff"
+        android:textSize="38sp"
+        android:fontFamily="@font/pingf_reg"/>
+
+    <ImageButton
+        android:id="@+id/record_diary_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="#11000000"
+        app:srcCompat="@mipmap/back_green" />
+
+    <ImageButton
+        android:id="@+id/edit_button"
+        android:layout_width="57dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/record_diary_title"
+        android:layout_marginTop="140dp"
+        android:background="#11000000"
+        app:srcCompat="@mipmap/newedit" />
+
+
+</RelativeLayout>

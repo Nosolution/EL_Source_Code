@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" stylesheets="@RoomViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.RoomViewController">
+    <ImageView fx:id="establishment" fitWidth="200.0" onMouseClicked="#clickEstablishment" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Image url="@image/room/establishment.png"/>
+    </ImageView>
+    <ImageView fx:id="participation" fitWidth="200.0" onMouseClicked="#clickParticipation" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Image url="@image/room/participation.png"/>
+    </ImageView>
+    <ImageView fx:id="roomIDLabel" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <Image url="@image/room/roomIDLabel.png"/>
+    </ImageView>
+    <TextField fx:id="roomID" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+    <Label fx:id="information" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+    <ImageView fx:id="submit" fitWidth="150.0" onMouseClicked="#clickSubmit" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/room/submit.png"/>
+    </ImageView>
+    <ImageView fx:id="back" fitWidth="150.0" onMouseClicked="#clickBack" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3">
+        <Image url="@image/room/back.png"/>
+    </ImageView>
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" percentWidth="15.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="40.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="40.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="15.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+        <RowConstraints percentHeight="25.0" valignment="CENTER" />
+        <RowConstraints percentHeight="30.0" valignment="CENTER" />
+        <RowConstraints percentHeight="25.0" valignment="CENTER" />
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+      <RowConstraints />
+    </rowConstraints>
+</GridPane>

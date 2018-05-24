@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="pane" prefHeight="720.0" prefWidth="1280.0" stylesheets="@SchoolViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.SchoolViewController">
+    <ImageView fx:id="backgroundG" preserveRatio="true" visible="false" GridPane.rowSpan="2">
+        <Image url="@image/school/backgroundG.png" />
+    </ImageView>
+    <ImageView fx:id="backgroundS" preserveRatio="true" visible="false" GridPane.rowSpan="2">
+        <Image url="@image/school/backgroundS.png" />
+    </ImageView>
+    <ImageView fx:id="backgroundR" preserveRatio="true" visible="false" GridPane.rowSpan="2">
+        <Image url="@image/school/backgroundR.png" />
+    </ImageView>
+    <ImageView fx:id="backgroundH" preserveRatio="true" visible="false" GridPane.rowSpan="2">
+        <Image url="@image/school/backgroundH.png" />
+    </ImageView>
+    <ImageView fx:id="logoG" onMouseClicked="#clickLogo" onMouseEntered="#enterLogoG" onMouseExited="#exitLogoG" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+        <Image url="@image/school/logoG.png" />
+    </ImageView>
+    <ImageView fx:id="logoS" onMouseClicked="#clickLogo" onMouseEntered="#enterLogoS" onMouseExited="#exitLogoS" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+        <Image url="@image/school/logoS.png" />
+    </ImageView>
+    <ImageView fx:id="logoR" onMouseClicked="#clickLogo" onMouseEntered="#enterLogoR" onMouseExited="#exitLogoR" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <Image url="@image/school/logoR.png" />
+    </ImageView>
+    <ImageView fx:id="logoH" onMouseClicked="#clickLogo" onMouseEntered="#enterLogoH" onMouseExited="#exitLogoH" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+        <Image url="@image/school/logoH.png" />
+    </ImageView>
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" percentWidth="47.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="26.6" />
+        <ColumnConstraints halignment="CENTER" percentWidth="26.4" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="41.4" valignment="CENTER" />
+        <RowConstraints percentHeight="58.6" valignment="CENTER" />
+    </rowConstraints>
+</GridPane>

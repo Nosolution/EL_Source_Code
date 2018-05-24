@@ -1,0 +1,8 @@
+/*"STXiHei"用以通用 "Microsoft YaHei"用以兼容Windows "Heiti SC"用以兼容MacOS和iOS "WenQuanYi Micro Hei"用以兼容Linux*/
+* {
+    -fx-font-family: "STXiHei", "Microsoft YaHei", "Heiti SC", "WenQuanYi Micro Hei";
+}
+.root{
+    -fx-background-image: url("image/entrollment/background.png");
+    -fx-background-size: stretch;
+}

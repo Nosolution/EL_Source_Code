@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp">
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/todo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="22sp"
+        android:textColor="#808080"
+        android:text="我要刷题我要刷题"
+        android:layout_marginStart="3dp"
+        android:singleLine="true"
+        android:fontFamily="@font/pingf_reg"
+        android:gravity="start"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/todo_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:text="5分钟"
+        android:fontFamily="@font/pingf_reg"
+        android:layout_marginEnd="3dp"
+        android:gravity="end"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.user.simpleclock">
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/circle_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".MainActivity"
+            android:label="FOXUS"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Clock"
+            android:label="FOXUS"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".RecordFocusActivity"
+            android:screenOrientation="portrait"
+            android:label="FOXUS"/>
+        <activity android:name=".EditDiaryActivity"
+            android:screenOrientation="portrait"
+            android:label="FOXUS"/>
+        <activity android:name=".RecordDiaryActivity"
+            android:screenOrientation="portrait"
+            android:label="FOXUS"/>
+        <activity android:name=".TodoActivity"
+            android:screenOrientation="portrait"
+            android:label="FOXUS"/>
+        <activity
+            android:name=".HomePageActivity"
+            android:label="FOXUS"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DiaryViewActivity"
+            android:screenOrientation="portrait"
+            android:label="FOXUS"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" stylesheets="@WarningViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.WarningViewController">
+    <Label fx:id="information" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+    <ImageView fx:id="exit" fitWidth="200.0" onMouseClicked="#clickExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Image url="@image/warning/exit.png"/>
+    </ImageView>
+    <ImageView fx:id="cancel" fitWidth="200.0" onMouseClicked="#clickCancel" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Image url="@image/warning/cancel.png"/>
+    </ImageView>
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" percentWidth="10.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="40.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="40.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+        <RowConstraints percentHeight="40.0" valignment="CENTER" />
+        <RowConstraints percentHeight="40.0" valignment="CENTER" />
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+    </rowConstraints>
+</GridPane>

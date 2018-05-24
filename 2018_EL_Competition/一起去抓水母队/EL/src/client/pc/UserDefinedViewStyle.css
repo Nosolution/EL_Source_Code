@@ -1,0 +1,21 @@
+/*"STXiHei"用以通用 "Microsoft YaHei"用以兼容Windows "Heiti SC"用以兼容MacOS和iOS "WenQuanYi Micro Hei"用以兼容Linux*/
+* {
+    -fx-font-family: "STXiHei", "Microsoft YaHei", "Heiti SC", "WenQuanYi Micro Hei";
+}
+.root{
+    -fx-background-image: url("image/userDefined/background.png");
+    -fx-background-size: stretch;
+}
+.label {
+    -fx-font-size: 30px;
+}
+#time{
+    -fx-background-color: transparent;
+    -fx-pref-width: 150px;
+}
+#submit:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 1);
+}
+#cancel:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 1);
+}

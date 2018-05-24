@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/home_page"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/my_clock">
+
+
+    <TextView
+        android:id="@+id/seconds_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="0:00"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:fontFamily="@font/pingf_reg"/>
+
+    <com.app.progresviews.ProgressWheel
+        android:id="@+id/progress_bar"
+        android:layout_width="348dp"
+        android:layout_height="349dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="61dp"
+        android:padding="30dp"
+        app:barWidth="2dp"
+        app:countText=""
+        app:countTextColor="#fff"
+        app:countTextSize="50sp"
+        app:defTextColor="@android:color/black"
+        app:defTextSize="25sp"
+        app:definitionText=""
+        app:marginBtwText="15dp"
+        app:percentage="360"
+        app:progressColor="#65b1fe"
+        app:rimColor="#f0f0f0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="324dp"
+        android:layout_height="309dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        app:srcCompat="@mipmap/timer_ring" />
+
+    <ImageButton
+        android:id="@+id/timer_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:background="#11000000"
+        app:srcCompat="@mipmap/cancel_red" />
+
+
+</RelativeLayout>

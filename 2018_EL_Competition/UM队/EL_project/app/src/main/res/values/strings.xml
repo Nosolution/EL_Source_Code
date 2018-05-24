@@ -1,0 +1,50 @@
+<resources>
+	<string name="app_name">时晏</string>
+	<string name="add_task_activity_title">添加任务</string>
+	<string name="title_activity_main2">Main2Activity</string>
+	<string name="cancle">取消</string>
+	<string name="title">请选择时间</string>
+	<string name="commit">确定</string>
+	<string name="year">年</string>
+	<string name="month">月</string>
+	<string name="day">日</string>
+	<string name="hour">时</string>
+	<string name="minute">分</string>
+
+	<string name="select_date">选择日期</string>
+	<string name="current_date">当前日期</string>
+	<string name="select_time">选择时间</string>
+	<string name="current_time">当前时间</string>
+	<string name="task_remarks">一天</string>
+	<!--activity_main4-->
+	<string name="back4">返回主界面</string>
+	<string name="next4">下一项任务</string>
+	<string name="left4">返回</string>
+	<string name="my_suggestion">试试把番茄钟调到40分钟吧XD</string>
+
+	<!--activity_main2-->
+	<string name="task2">任务：</string>
+	<string name="time2">预计时间：</string>
+	<string name="ddl2">DDL</string>
+	<string name="importance2">紧急程度</string>
+	<string name="everyday2">是否设为每日工作</string>
+	<string name="begin2">立即开始</string>
+	<string name="add2">加入待办</string>
+	<string name="edit2">备注</string>
+	<string name="string_if_music_on">音乐</string>
+	<string name="string_if_tomato_clock_on">番茄钟</string>
+	<string name="string_tomato_clock_on">时长</string>
+	<string name="bar">添加任务</string>
+
+	<!--drawer_setting-->
+	<string name="edit3">  这里是备注内容</string>
+	<string name="time31">还有</string>
+	<string name="time32">00:00</string>
+	<string name="time33">预计完成</string>
+	<string name="tomato3">距离下次休息还有00分钟</string>
+	<string name="text_clean_share_store">清理图片\n分享缓存</string>
+	<string name="btn_text_clean_share_storage">清理</string>
+	<string name="choose_break_time">休息时长</string>
+
+	<string name="words">及年岁之未晏兮，时亦犹其未央。\n——屈原《离骚》</string>
+</resources>

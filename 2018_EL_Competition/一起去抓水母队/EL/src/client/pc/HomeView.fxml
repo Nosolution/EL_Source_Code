@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Label?>
+<GridPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@HomeViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.HomeViewController">
+    <ImageView fx:id="setting" fitHeight="120.0" fitWidth="160.0" onMouseClicked="#clickSettings" pickOnBounds="true" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <Image url="@image/home/settings.png"/>
+    </ImageView>
+    <ImageView fx:id="music" fitHeight="60.0" fitWidth="60.0" onMouseClicked="#clickMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/home/music.png" />
+    </ImageView>
+    <ImageView fx:id="music1" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#clickMusic1" onMouseEntered="#enterMusic1" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/home/mute.png" />
+    </ImageView>
+    <ImageView fx:id="music2" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#clickMusic2" onMouseEntered="#enterMusic2" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/home/musicS.png" />
+    </ImageView>
+    <ImageView fx:id="music3" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#clickMusic3" onMouseEntered="#enterMusic3" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/home/musicR.png" />
+    </ImageView>
+    <ImageView fx:id="music4" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#clickMusic4" onMouseEntered="#enterMusic4" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/home/musicL.png" />
+    </ImageView>
+    <ImageView fx:id="music5" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#clickMusic5" onMouseEntered="#enterMusic5" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/home/musicH.png" />
+    </ImageView>
+    <ImageView fx:id="music6" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#clickMusic6" onMouseEntered="#enterMusic6" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/home/musicG.png" />
+    </ImageView>
+    <Label fx:id="musicTip" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <ImageView fx:id="volume" fitHeight="60.0" fitWidth="60.0" onMouseClicked="#clickVolume" pickOnBounds="true" visible="false" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2">
+        <Image url="@image/timing/volume.png" />
+    </ImageView>
+    <Slider fx:id="slider" onMouseReleased="#releaseSlider" value="20.0" visible="false" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="3">
+        <effect>
+            <Bloom />
+        </effect>
+    </Slider>
+    <ImageView fx:id="statistics" fitHeight="120.0" fitWidth="160.0" onMouseClicked="#clickStatistics" pickOnBounds="true" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="1">
+        <Image url="@image/home/statistics.png"/>
+    </ImageView>
+    <ImageView fx:id="group" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickGroup" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <Image url="@image/home/groupMode.png"/>
+    </ImageView>
+    <ImageView fx:id="single" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#clickSingle" pickOnBounds="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+        <Image url="@image/home/singleMode.png"/>
+    </ImageView>
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" percentWidth="30.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="20.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="20.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="7.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="2.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="5.0" valignment="CENTER" />
+        <RowConstraints percentHeight="15.0" valignment="CENTER" />
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+        <RowConstraints percentHeight="10.0" valignment="CENTER" />
+        <RowConstraints percentHeight="30.0" valignment="CENTER" />
+        <RowConstraints percentHeight="30.0" valignment="CENTER" />
+    </rowConstraints>
+</GridPane>

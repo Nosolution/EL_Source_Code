@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@TimingViewStyle.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.pc.TimingViewController">
+    <!--时间-->
+    <Label fx:id="time" onMouseClicked="#clickTime" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+    <!--音乐相关-->
+    <ImageView fx:id="music" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickMusic" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/timing/music.png" />
+    </ImageView>
+    <ImageView fx:id="music1" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#clickMusic1" onMouseEntered="#enterMusic1" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/timing/mute.png" />
+    </ImageView>
+    <ImageView fx:id="music2" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#clickMusic2" onMouseEntered="#enterMusic2" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/timing/musicS.png" />
+    </ImageView>
+    <ImageView fx:id="music3" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#clickMusic3" onMouseEntered="#enterMusic3" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/timing/musicR.png" />
+    </ImageView>
+    <ImageView fx:id="music4" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#clickMusic4" onMouseEntered="#enterMusic4" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/timing/musicL.png" />
+    </ImageView>
+    <ImageView fx:id="music5" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#clickMusic5" onMouseEntered="#enterMusic5" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/timing/musicH.png" />
+    </ImageView>
+    <ImageView fx:id="music6" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#clickMusic6" onMouseEntered="#enterMusic6" onMouseExited="#exitMusic" pickOnBounds="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Image url="@image/timing/musicG.png" />
+    </ImageView>
+    <Label fx:id="musicTip" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+    <!--暂停-->
+    <ImageView fx:id="pause" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickPause" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <Image url="@image/timing/pause.png" />
+    </ImageView>
+    <!--停止-->
+    <ImageView fx:id="stop" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickStop" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+        <Image url="@image/timing/stop.png" />
+    </ImageView>
+    <!--音量相关-->
+    <ImageView fx:id="volume" fitHeight="100.0" fitWidth="100.0" onMouseClicked="#clickVolume" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.rowIndex="3">
+        <Image url="@image/timing/volume.png" />
+    </ImageView>
+    <Slider fx:id="slider" onMouseReleased="#releaseSlider" value="20.0" visible="false" GridPane.columnIndex="7" GridPane.rowIndex="4">
+        <effect>
+            <Bloom />
+        </effect>
+    </Slider>
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" percentWidth="11.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="15.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="6.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="15.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="6.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="15.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="6.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="15.0" />
+        <ColumnConstraints halignment="CENTER" percentWidth="11.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+    </rowConstraints>
+</GridPane>
