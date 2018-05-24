@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/town">
+
+    <Button
+        android:layout_width="108dp"
+        android:layout_height="238dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="138dp"
+        android:layout_marginLeft="105dp"
+        android:background="@mipmap/main_character"
+        android:onClick="person_button" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:scaleType = "centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/topbar" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:scaleType = "centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/bottombar" />
+    <Button
+        android:id="@+id/button_town2beach"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="55dp"
+        android:layout_marginRight="150dp"
+        android:background="@mipmap/to_beach" />
+
+    <Button
+        android:id="@+id/button_town2forest"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="211dp"
+        android:layout_marginRight="130dp"
+        android:background="@mipmap/to_forest" />
+
+    <Button
+        android:id="@+id/button_town2caffee"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="106dp"
+        android:layout_marginLeft="92dp"
+        android:background="@mipmap/to_caffee" />
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="211dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="0dp"
+        android:background="@mipmap/begger"
+        android:onClick="begger_button" />
+
+    <Button
+        android:id="@+id/button_town2achievement"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/ach" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/forest">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:scaleType = "centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/topbar" />
+    <ImageView
+        android:id="@+id/apple_image"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/apple" />
+    <TextView
+        android:id="@+id/apple_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/apple_image"
+        android:textSize="25dp"/>
+
+
+    <Button
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/button_forest2town"
+        android:background="@mipmap/time"
+        android:onClick="time_choose_forest" />
+
+    <Button
+        android:layout_width="114dp"
+        android:layout_height="172dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="143dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="51dp"
+        android:background="@mipmap/forester"
+        android:onClick="forester" />
+
+    <Button
+        android:id="@+id/button_forest2town"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:textSize="40dp"
+        android:textColor="#FFFFFF"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:scaleType = "centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/bottombar" />
+
+</RelativeLayout>

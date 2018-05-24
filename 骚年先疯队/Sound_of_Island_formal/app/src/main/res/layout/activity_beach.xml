@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/beach">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:scaleType = "centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/topbar" />
+
+    <ImageView
+        android:id="@+id/fish_image"
+        android:layout_width="41dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/fish" />
+    <TextView
+        android:id="@+id/fish_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/fish_image"
+        android:textSize="25dp"/>
+
+    <Button
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/button_beach2town"
+        android:background="@mipmap/time"
+        android:onClick="time_choose_beach"/>
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="160dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="190dp"
+        android:background="@mipmap/fisherman"
+        android:onClick="fisherman" />
+
+    <Button
+        android:id="@+id/button_beach2town"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="117dp"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:scaleType = "centerCrop"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/bottombar" />
+
+</RelativeLayout>
