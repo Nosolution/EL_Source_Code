@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/elbackground"
+    ><!--背景图片-->
+
+    <!--学习按钮-->
+    <Button
+        android:id="@+id/btn_study"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_study"
+        android:paddingTop="10dp"
+        android:text="学  习"
+        android:drawableTop="@drawable/book"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <!--睡眠按钮-->
+    <Button
+        android:id="@+id/btn_sleep"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:drawableTop="@drawable/bed"
+        android:paddingTop="10dp"
+        android:text="睡  眠"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_sleep"
+        android:layout_alignBottom="@id/btn_study"
+        android:layout_centerInParent="true"
+        />
+    <!--运动按钮-->
+    <Button
+        android:id="@+id/btn_exercise"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="运  动"
+        android:drawableTop="@drawable/run"
+        android:paddingTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="@drawable/bg_exercise"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/btn_study"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <!--左上角图标-->
+    <Button
+        android:id="@+id/btn_person1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/loginperson"
+        />
+
+    <!--右上角相关信息-->
+    <Button
+        android:id="@+id/tokfz"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/kfzintroduction"
+        android:layout_margin="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+    <!--添加一个线条-->
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ff8fec"
+        android:layout_above="@id/btn_study"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/task"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/task2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/success"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/dim1"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello ,"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="40sp"
+        android:textColor="#0A0A0A"
+        android:layout_below="@id/btn_person1"
+        android:layout_marginTop="40dp"/>
+    <!--左下角-->
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="      friend !"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="40sp"
+        android:textColor="#0A0A0A"
+        android:layout_below="@id/text1"
+        android:layout_marginTop="40dp"/>
+    <!--专注句-->
+    <TextView
+        android:id="@+id/sentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="——专注是一个人最好的修行."
+        android:textStyle="italic"
+        android:textColor="#99ffffff"
+        android:textSize="18dp"
+        android:layout_marginLeft="88dp"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>
+

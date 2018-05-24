@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="920dp">
+
+        <TextView
+            android:id="@+id/text_title_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_toEndOf="@+id/imageButton_exitFAQ"
+            android:layout_toRightOf="@+id/imageButton_exitFAQ"
+            android:text="常见问题"
+            android:textColor="#fddb53"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_title_faq"
+            android:layout_marginTop="14dp"
+            android:background="#897c61" />
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#fddb53"
+            android:textSize="18sp"
+            android:text="Q：我能否为某些软件添加白名单？" />
+
+        <TextView
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="#897c61" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#f9f3dc"
+            android:textSize="16sp"
+            android:text="A：抱歉的是，我们暂时未能实现白名单功能，因此当您使用一些软件而使Timescapes位于后台时，可能仍然会造成计时失败。" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#fddb53"
+            android:textSize="18sp"
+            android:text="Q：积分值是如何计算的？" />
+
+        <TextView
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="#897c61" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_3"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#f9f3dc"
+            android:textSize="16sp"
+            android:text="A：积分是根据您专注的时长计算的。专注的时长越长，您所获得的积分越多，积分值的相对增加量也越多。" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#fddb53"
+            android:textSize="18sp"
+            android:text="Q：我能够自定义任意长度的专注时间吗？" />
+
+        <TextView
+            android:id="@+id/line_4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="#897c61" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_4"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#f9f3dc"
+            android:textSize="16sp"
+            android:text="A：出于积分统计等便利，目前只有有限的专注时长选项。在将来的版本中，可能会提供更自由的时间设置。" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#fddb53"
+            android:textSize="18sp"
+            android:text="Q：如果没有注册账号，能否解锁成就？" />
+
+        <TextView
+            android:id="@+id/line_5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/textView10"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="#897c61" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_5"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#f9f3dc"
+            android:textSize="16sp"
+            android:text="A：您需要注册一个账户来保存您的积分信息。
+       当您在设置中注册过账户后，再次打开软件时将会自动登陆此账户，并且您可以获得积分与解锁成就。如果您未注册账户，则专注时长不会被保存。
+注册您的账户，并将成绩分享给好友吧！" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#fddb53"
+            android:textSize="18sp"
+            android:text="Q：注销账户后成就能保留吗？" />
+
+        <TextView
+            android:id="@+id/line_6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="#897c61" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_6"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#f9f3dc"
+            android:textSize="16sp"
+            android:text="A：当您注销了账户，意味着您需要再次注册一个新账户才能使用积分与成就功能，因此成就无法保存。谨慎注销！" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="35dp"
+            android:textColor="#fddb53"
+            android:textSize="18sp"
+            android:text="Q：退出时是否算作一次失败？" />
+
+        <TextView
+            android:id="@+id/line_7"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/textView14"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="#897c61" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_7"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#f9f3dc"
+            android:textSize="16sp"
+            android:text="A：您可以在设置中选择是否退出软件算作失败，但两者皆无法获得专注积分。" />
+
+        <ImageButton
+            android:id="@+id/imageButton_exitFAQ"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/text_title_faq"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/exit_settings" />
+    </RelativeLayout>
+
+</ScrollView>

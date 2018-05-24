@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeScreen">
+
+    <TextView
+        android:id="@+id/guide_word_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="445dp"
+        android:text="开始您的专注之旅"
+        android:textColor="#14264b"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="240dp"
+        android:layout_height="191dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="179dp"
+        app:srcCompat="@drawable/entrance_pic" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#273656"
+        android:text="点此进入" />
+
+
+</RelativeLayout>

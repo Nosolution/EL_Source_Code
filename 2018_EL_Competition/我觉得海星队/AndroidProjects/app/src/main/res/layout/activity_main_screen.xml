@@ -1,0 +1,195 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#233b6b"
+    android:splitMotionEvents="false"
+    tools:context="com.nju.team.timescapes.MainScreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text=""
+        android:textColor="#f79f1b"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton_settings"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icon_settings" />
+
+        <ImageButton
+            android:id="@+id/imageButton_tag"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icon_tag"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/imageButton_rankings"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="61dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icon_rankings" />
+
+        <ImageButton
+            android:id="@+id/musicoff"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon_musicoff" />
+
+        <Button
+            android:id="@+id/button_timer"
+            android:layout_width="102dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="485dp"
+            android:background="#fddb53"
+            android:text="开始专注"
+            android:textColor="#070e1b"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_timer_cancel"
+            android:layout_width="102dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="485dp"
+            android:background="#fddb53"
+            android:text="放弃专注"
+            android:textColor="#fddb53"
+            android:visibility="gone"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_calendar"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="111dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon_calendar" />
+
+        <ImageView
+            android:id="@+id/pic_short"
+            android:layout_width="233dp"
+            android:layout_height="233dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="128dp"
+            app:srcCompat="@drawable/pic_short" />
+
+        <TextView
+            android:id="@+id/time_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="97dp"
+            android:textColor="#fddb53"
+            android:textSize="35sp"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/split_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="385dp"
+            android:layout_marginLeft="146dp"
+            android:textColor="#fddb53"
+            android:textSize="30sp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/time_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="160dp"
+            android:textColor="#fddb53"
+            android:textSize="35sp"
+            android:text="00" />
+
+        <TextView
+            android:id="@+id/split_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="385dp"
+            android:layout_marginLeft="209dp"
+            android:textColor="#fddb53"
+            android:textSize="30sp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/time_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="223dp"
+            android:textColor="#fddb53"
+            android:textSize="35sp"
+            android:text="00" />
+
+        <RelativeLayout
+            android:id="@+id/circle_animation"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="95dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

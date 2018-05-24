@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeScreen">
+
+    <TextView
+        android:id="@+id/guide_word_up" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#07132c"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="自定义您的设置" />
+
+    <TextView
+        android:id="@+id/guide_word_down1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#fddb53"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:text="您可以在主界面右侧的 [设置] 选项卡" />
+
+    <TextView
+        android:id="@+id/guide_word_down22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guide_word_down1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="内自定义您对 Timescapes 的设定"
+        android:textColor="#fddb53"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_below="@+id/guide_word_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        app:srcCompat="@drawable/setting" />
+
+</RelativeLayout>

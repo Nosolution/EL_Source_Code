@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1040dp">
+
+
+        <TextView
+            android:id="@+id/text_title_achievements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_toEndOf="@+id/imageButton_exitAchievements"
+            android:layout_toRightOf="@+id/imageButton_exitAchievements"
+            android:text="积分与成就"
+            android:textColor="#ffe992"
+            android:textSize="26sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_exitAchievements"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/text_title_achievements"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/exit_settings" />
+
+        <TextView
+            android:id="@+id/square_1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_title_achievements"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/line_up"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/text_title_scores"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:background="#766b44" />
+
+        <TextView
+            android:id="@+id/text_title_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/square_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="积分统计"
+            android:textColor="#fddb53"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_title_scores"
+            android:layout_marginTop="8dp"
+            android:background="#766B44" />
+
+        <TextView
+            android:id="@+id/text_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:text="您已专注"
+            android:textColor="#fddb53"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line_1"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:text="当前积分"
+            android:textColor="#fddb53"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_numFocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_total_time"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="2dp"
+            android:text="3600"
+            android:textColor="#ffe992"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_numFocus"
+            android:layout_alignBottom="@+id/text_numFocus"
+            android:layout_marginLeft="135dp"
+            android:layout_marginStart="135dp"
+            android:text="分钟"
+            android:textColor="#fddb53"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_numScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_scores"
+            android:layout_marginLeft="210dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="2dp"
+            android:text="00760"
+            android:textColor="#ffe992"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_numScore"
+            android:layout_alignBottom="@+id/text_numScore"
+            android:layout_marginLeft="330dp"
+            android:layout_marginStart="330dp"
+            android:text="分"
+            android:textColor="#fddb53"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView17"
+            android:layout_marginTop="15dp"
+            android:background="#766B44" />
+
+        <TextView
+            android:id="@+id/text_successRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/line_2"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="8dp"
+            android:text="成功率"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/success_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_2"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@+id/text_successRate"
+            android:layout_toRightOf="@+id/text_successRate"
+            android:text="73%"
+            android:textColor="#ffe992"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_avLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line_2"
+            android:layout_marginEnd="90dp"
+            android:layout_marginRight="90dp"
+            android:layout_marginTop="8dp"
+            android:text="专注次数"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/av_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/line_2"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            android:text="47"
+            android:textColor="#ffe992"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_avLength"
+            android:layout_marginTop="8dp"
+            android:background="#766B44" />
+
+
+        <Button
+            android:id="@+id/text_title_achs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/line_3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:text="专注历程"
+            android:textColor="#fddb53"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/line_5"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_title_achs"
+            android:layout_marginTop="2dp"
+            android:background="#766B44" />
+
+        <TextView
+            android:id="@+id/guide_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title_achs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="点击“专注历程”标题可查看您的专注历程"
+            android:textColor="#766B44" />
+
+        <TextView
+            android:id="@+id/line_6"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_title_achs"
+            android:layout_marginTop="44dp"
+            android:background="#766B44" />
+
+        <TextView
+            android:id="@+id/text_achs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="我的成就"
+            android:textColor="#fddb53"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/line_4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/line_6"
+            android:layout_marginTop="70dp"
+            android:background="#766B44" />
+
+        <ImageView
+            android:id="@+id/image_achUser"
+            android:layout_width="100dp"
+            android:layout_height="118dp"
+            android:layout_below="@+id/line_4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/ach_userregistered_dark" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_achUser"
+            android:layout_marginLeft="66dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="4dp"
+            android:text="第一步"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView20"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:text="注册一个账户"
+            android:textColor="#ffe992"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image_ach120"
+            android:layout_width="100dp"
+            android:layout_height="118dp"
+            android:layout_below="@+id/line_4"
+            android:layout_marginLeft="225dp"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/ach_120_dark" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ach120"
+            android:layout_marginLeft="259dp"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="4dp"
+            android:text="树林"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView22"
+            android:layout_marginLeft="233dp"
+            android:layout_marginStart="233dp"
+            android:layout_marginTop="4dp"
+            android:text="专注120分钟"
+            android:textColor="#ffe992"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image_ach600"
+            android:layout_width="100dp"
+            android:layout_height="118dp"
+            android:layout_below="@+id/textView21"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ach_600_dark" />
+
+        <ImageView
+            android:id="@+id/image_ach1200"
+            android:layout_width="100dp"
+            android:layout_height="118dp"
+            android:layout_below="@+id/textView23"
+            android:layout_marginLeft="225dp"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ach_1200_dark" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ach600"
+            android:layout_marginLeft="71dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="4dp"
+            android:text="河流"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView24"
+            android:layout_marginLeft="48dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="4dp"
+            android:text="专注600分钟"
+            android:textColor="#ffe992"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ach1200"
+            android:layout_marginLeft="259dp"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="4dp"
+            android:text="海洋"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView26"
+            android:layout_marginLeft="232dp"
+            android:layout_marginStart="232dp"
+            android:layout_marginTop="4dp"
+            android:text="专注1200分钟"
+            android:textColor="#ffe992"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image_ach3000"
+            android:layout_width="100dp"
+            android:layout_height="118dp"
+            android:layout_below="@+id/textView25"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ach_3000_dark" />
+
+        <ImageView
+            android:id="@+id/image_ach6000"
+            android:layout_width="137dp"
+            android:layout_height="97dp"
+            android:layout_below="@+id/textView27"
+            android:layout_marginLeft="205dp"
+            android:layout_marginStart="205dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/ach_6000_dark" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ach3000"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="4dp"
+            android:text="天空"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView28"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="4dp"
+            android:text="专注3000分钟"
+            android:textColor="#ffe992"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_ach6000"
+            android:layout_marginLeft="259dp"
+            android:layout_marginStart="259dp"
+            android:layout_marginTop="9dp"
+            android:text="无尽？"
+            android:textColor="#fddb53"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView30"
+            android:layout_marginLeft="232dp"
+            android:layout_marginStart="232dp"
+            android:layout_marginTop="4dp"
+            android:text="专注6000分钟"
+            android:textColor="#ffe992"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

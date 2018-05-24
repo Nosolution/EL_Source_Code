@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">专注果树</string>
+    <string name="title_activity_Main">我要专注</string>
+    <string name="title_activity_cho">栽培日记</string>
+    <string name="title_activity_set_tiem">专注一刻</string>
+    <string name="title_activity_fifth">我的果树</string>
+    <string name="title_activity_set_work">我的任务</string>
+    <string name="myButtonText">开始倒计时</string>
+    <string name="text_select">设置时间</string>
+</resources>

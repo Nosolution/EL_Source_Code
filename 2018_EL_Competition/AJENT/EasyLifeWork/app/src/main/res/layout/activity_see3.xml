@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_see3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/guoyuan">
+
+    <TextView
+        android:text="拥有的水果："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView26"
+        android:textSize="40sp" />
+
+    <TextView
+        android:text="猕猴桃"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView20"
+        android:layout_alignLeft="@+id/coconut"
+        android:layout_alignStart="@+id/coconut"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/kiwifruit"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="上一页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button27"
+        android:onClick="back"
+        android:textSize="14sp"
+        android:background="#00000000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mihoutao"
+        android:id="@+id/imageView20"
+        android:layout_above="@+id/button27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/yezi"
+        android:id="@+id/imageView19"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/imageView20"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="椰子"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/coconut"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/imageView19"
+        android:layout_alignLeft="@+id/pomegranate"
+        android:layout_alignStart="@+id/pomegranate" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shiliu"
+        android:id="@+id/imageView18"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:text="石榴"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pomegranate"
+        android:textSize="30sp"
+        android:layout_marginBottom="22dp"
+        android:layout_alignBottom="@+id/imageView18"
+        android:layout_alignRight="@+id/textView26"
+        android:layout_alignEnd="@+id/textView26" />
+</RelativeLayout>

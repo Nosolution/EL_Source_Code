@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg">
+
+    <DigitalClock
+        android:id="@+id/myClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myClock"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_select"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/myButtonText"
+        android:textSize="30sp"
+        android:background="#F0FFFF"/>
+
+    <EditText android:id="@+id/minute"
+        android:maxLength="4"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:layout_below="@+id/text_select"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+    <EditText android:id="@+id/second"
+        android:maxLength="4"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/text_select"
+        android:layout_toRightOf="@id/minute"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="20sp" />
+    <EditText android:id="@+id/hour"
+        android:maxLength="4"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/text_select"
+        android:layout_toLeftOf="@+id/minute"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/szh"
+        android:id="@+id/imageView44"
+        android:layout_below="@+id/minute"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="点击可结束"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_back"
+        android:textSize="30sp"
+        android:background="#E0FFFF"
+        android:layout_alignBottom="@+id/button_start"
+        android:layout_toRightOf="@+id/button_start"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_start" />
+
+</RelativeLayout>

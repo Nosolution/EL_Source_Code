@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_types">
+        <item>震动 </item>
+        <item>响铃</item>
+        <item>关闭</item>
+        <item>震动并响铃</item>
+    </string-array>
+
+    <string-array name="focus_time">
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>15分钟 </item>
+        <item>20分钟</item>
+        <item>25分钟</item>
+        <item>30分钟</item>
+        <item>40分钟</item>
+        <item>50分钟 </item>
+        <item>60分钟</item>
+        <item>90分钟</item>
+        <item>120分钟</item>
+    </string-array>
+</resources>

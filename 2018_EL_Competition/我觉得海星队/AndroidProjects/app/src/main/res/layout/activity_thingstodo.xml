@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg">
+
+    <ImageButton
+        android:id="@+id/ib_1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_thing"/>
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"/>
+
+    <TextView
+        android:id="@+id/tv_thing"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_x"
+        android:textColor="#fce072"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/sp_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_thing"
+        android:layout_marginTop="4dp"
+        android:background="@color/line_split" />
+
+    <TextView
+        android:id="@+id/sp_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_thing"
+        android:layout_marginTop="31dp"
+        android:background="@color/line_split" />
+
+    <TextView
+        android:id="@+id/longclick_to_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_thing"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="长按日程以删除"
+        android:textColor="#706333" />
+
+    <ImageView
+        android:id="@+id/no_arrange_pic"
+        android:layout_width="428dp"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/no_shcedule" />
+
+    <TextView
+        android:id="@+id/no_arrange_hint"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="380dp"
+        android:text="目前您还没有已安排的日程 :)"
+        android:textColor="#a49453"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/lv_1"
+        android:layout_below="@+id/ib_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_centerVertical="true"
+        />
+
+    <Button
+        android:id="@+id/btn_clean_out"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:visibility="gone"
+        android:text="清空" />
+</RelativeLayout>

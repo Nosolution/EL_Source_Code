@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mainViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/Org"
+        android:layout_width="1036dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/red" />
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="415dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="400dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/mainViewPager"
+        app:layout_constraintEnd_toEndOf="@+id/mainViewPager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/item_weixin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/reddef"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="欢迎"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/item_tongxunlu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/reddef"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="漫步"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/item_faxian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/reddef"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="沉浸"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/item_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/reddef"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="设定"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <com.example.a81271.timato.MusicBar
+        android:id="@+id/musicbar"
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+    </com.example.a81271.timato.MusicBar>
+
+
+</android.support.constraint.ConstraintLayout>

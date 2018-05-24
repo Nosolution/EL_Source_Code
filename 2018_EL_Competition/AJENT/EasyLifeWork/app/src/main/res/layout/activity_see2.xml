@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_see2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/guoyuan">
+
+    <TextView
+        android:text="拥有的水果："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView22"
+        android:textSize="40sp" />
+
+    <TextView
+        android:text="西瓜"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView16"
+        android:layout_alignRight="@+id/textView22"
+        android:layout_alignEnd="@+id/textView22"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="46dp"
+        android:id="@+id/watermelon"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="火龙果"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/watermelon"
+        android:layout_alignLeft="@+id/watermelon"
+        android:layout_alignStart="@+id/watermelon"
+        android:layout_marginTop="48dp"
+        android:id="@+id/pitaya"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="下一页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button25"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="next"
+        android:background="#00000000"/>
+
+    <TextView
+        android:text="菠萝"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:id="@+id/pineapple"
+        android:textSize="30sp"
+        android:layout_alignBottom="@+id/imageView17"
+        android:layout_alignLeft="@+id/pitaya"
+        android:layout_alignStart="@+id/pitaya" />
+
+    <Button
+        android:text="上一页"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button26"
+        android:onClick="back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#00000000"/>
+
+    <ImageView
+        app:srcCompat="@drawable/boluo"
+        android:id="@+id/imageView17"
+        android:layout_height="150dp"
+        android:layout_width="110dp"
+        android:layout_above="@+id/button26"
+        android:layout_alignRight="@+id/imageView16"
+        android:layout_alignEnd="@+id/imageView16"
+        android:layout_marginBottom="22dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/huolongguo"
+        android:id="@+id/imageView16"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/xigua"
+        android:id="@+id/imageView15"
+        android:layout_above="@+id/imageView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+</RelativeLayout>

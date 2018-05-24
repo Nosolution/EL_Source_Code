@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Silence</string>
+    <string name="pref_break_duration">"休息时长"</string>
+    <string name="pref_continuous_mode">"连续模式"</string>
+    <string name="pref_counter">"任务数"</string>
+    <string name="pref_disable_sound_and_vibration">"切断干扰"</string>
+    <string name="pref_disable_wifi">"关闭Wi-Fi"</string>
+    <string name="pref_fullscreen">"全屏模式"</string>
+    <string name="pref_grant_permission">"单击以授予权限"</string>
+    <string name="pref_header_notifications">"通知"</string>
+    <string name="pref_header_general">"常规"</string>
+    <string name="pref_keep_screen_on">"保持屏幕常亮"</string>
+    <string name="pref_landscape">"横向模式"</string>
+    <string name="pref_long_break_duration">"长休时长"</string>
+    <string name="pref_ringtone">"专注提示音"</string>
+    <string name="pref_ringtone_summary">"设置提示音"</string>
+    <string name="pref_work_duration">"专注时长"</string>
+    <string name="pref_sessions_before_long_break">"长休前的任务数"</string>
+    <string name="pref_enable_long_break">"长休"</string>
+    <string name="pref_unit_minutes">"分钟"</string>
+    <string name="pref_unit_sessions">"任务"</string>
+    <string name="pref_vibrate">"振动"</string>
+    <string name="pref_theme">"背景色"</string>
+    <string name="pref_session_type_icon" translatable="false">"任务图标"</string>
+    <string name="pref_session_type_icon_summary" translatable="false">"工作或休息时不显示图标"</string>
+    <string name="pref_continuous_mode_summary" translatable="false">"禁止交互模式"</string>
+    <string name="pref_header_during_work_sessions">任务中</string>
+    <string name="pref_ringtone_dialog">白噪音</string>
+    <string name="pref_enable_ringtone">开启提醒音</string>
+    <string name="pref_ringtone_break">提醒音</string>
+
+    <plurals name="plural_minutes" >
+        <item quantity="one">%d 分钟</item>
+        <item quantity="other">%d 分钟</item>
+    </plurals>
+
+    <plurals name="plural_sessions" >
+        <item quantity="one">%d 任务</item>
+        <item quantity="other">%d 任务</item>
+    </plurals>
+
+
+</resources>

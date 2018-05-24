@@ -1,0 +1,6 @@
+<root>
+  <item
+      name='android.media.MediaPlayer void setDataSource(android.content.Context, android.net.Uri) 0'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>

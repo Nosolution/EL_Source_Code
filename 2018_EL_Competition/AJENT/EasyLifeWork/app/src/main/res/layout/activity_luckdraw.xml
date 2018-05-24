@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_luckdraw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/guoyuan">
+
+    <Button
+        android:text="    抽奖    "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button28"
+        android:textSize="36sp"
+        android:onClick="luckdraw"
+        android:layout_above="@+id/button29"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:background="#00000020"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/mihoutao"
+        android:id="@+id/imageView21"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/button28"
+        android:layout_centerHorizontal="true"
+        android:onClick="luckdraw" />
+
+    <Button
+        android:text="返回"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button29"
+        android:onClick="back"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button28"
+        android:layout_toStartOf="@+id/button28"
+        android:background="#00000000"
+    />
+
+    <TextView
+        android:text="水果抽奖"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView27"
+        android:textSize="40sp"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button28"
+        android:layout_alignEnd="@+id/button28" />
+
+    <TextView
+        android:text="规则：每消耗10个苹果抽一次，有一定的几率获得一个猕猴桃。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    </RelativeLayout>

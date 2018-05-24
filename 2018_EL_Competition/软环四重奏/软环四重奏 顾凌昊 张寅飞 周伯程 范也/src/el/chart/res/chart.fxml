@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="749.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="el.chart._ui.chartController">
+
+    <children>
+      <ImageView fitHeight="749.0" fitWidth="1280.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resource%206.png" />
+         </image>
+      </ImageView>
+      <LineChart fx:id="mchart" layoutX="52.0" layoutY="280.0" prefHeight="315.0" prefWidth="499.0">
+        <xAxis>
+          <NumberAxis fx:id="mxAxis" minorTickCount="0" prefHeight="31.0" prefWidth="46.0" side="BOTTOM" tickLabelGap="6.0" tickLength="7.0" upperBound="6.5">
+               <tickLabelFont>
+                  <Font size="16.0" />
+               </tickLabelFont></NumberAxis>
+        </xAxis>
+        <yAxis>
+          <NumberAxis id="myAxis" fx:id="myAxis" prefHeight="67.0" prefWidth="38.0" side="LEFT" upperBound="15.0" />
+        </yAxis>
+      </LineChart>
+      <Button mnemonicParsing="false" text="return" />
+      <Label layoutX="99.0" layoutY="157.0" prefHeight="50.0" prefWidth="158.0" text="最近七天你共专注了">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="210.0" prefHeight="59.0" prefWidth="150.0" text="你最多一次专注了">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="total" layoutX="336.0" layoutY="156.0" prefHeight="50.0" prefWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="highest" layoutX="336.0" layoutY="214.0" prefHeight="50.0" prefWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="235.0" layoutY="600.0" prefHeight="24.0" prefWidth="279.0" text="你最近七天的专注记录" />
+      <Label layoutX="619.0" layoutY="164.0" prefHeight="50.0" prefWidth="197.0" text="你总共完成了多少Task">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="619.0" layoutY="244.0" prefHeight="50.0" prefWidth="158.0" text="你上一次完成专注是在">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="619.0" layoutY="325.0" prefHeight="50.0" prefWidth="158.0" text="你累计专注了">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="619.0" layoutY="413.0" prefHeight="50.0" prefWidth="158.0" text="你的平均专注效率">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="taskcount" fx:id="taskcount" layoutX="853.0" layoutY="164.0" prefHeight="50.0" prefWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="lasttime" fx:id="lasttime" layoutX="853.0" layoutY="239.0" prefHeight="50.0" prefWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="totaltime" fx:id="totalTime" layoutX="853.0" layoutY="316.0" prefHeight="50.0" prefWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label id="efficiency" fx:id="efficiency" layoutX="853.0" layoutY="413.0" prefHeight="50.0" prefWidth="178.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

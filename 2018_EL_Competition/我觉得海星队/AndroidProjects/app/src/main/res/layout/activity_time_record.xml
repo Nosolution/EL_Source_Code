@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings_bg">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:text="时间历程"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#fce072"
+        android:textSize="24sp"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton_exitTimeRecord"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/exit_settings" />
+
+    <ImageView
+        android:id="@+id/image_no_route"
+        android:layout_width="310dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_route" />
+
+    <TextView
+        android:id="@+id/text_no_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#a39357"
+        android:text="您还没有专注的时间历程 :)"/>
+
+    <TextView
+        android:id="@+id/sp_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_1"
+        android:layout_marginTop="14dp"
+        android:background="#2e4d69" />
+
+    <ListView
+        android:id="@+id/lv_1"
+        android:layout_below="@+id/sp_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>

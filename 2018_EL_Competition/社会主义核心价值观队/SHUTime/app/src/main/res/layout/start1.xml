@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/start1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/b8"  >
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        android:typeface="monospace"
+        android:text="你来       我在 "
+        android:textSize="120px" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+
+
+        android:layout_alignLeft="@+id/start"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/start"
+        android:layout_marginBottom="104dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:text="SHUTIME "
+        android:textSize="100px" />
+
+</RelativeLayout>

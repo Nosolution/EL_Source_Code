@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nju.team.timescapes">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_sq"
+        android:label="Timescapes"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <activity
+            android:name=".WelcomeScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Timescapes"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.WELCOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainScreenActivity"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:label="Timescapes"
+                  android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAINS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".StartInterface"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SettingsPanelActivity"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DevelopersPanelActivity"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVPANEL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FAQPanelActivity"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.FAQPANEL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".AchievementsPanelActivity"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.ACHPANEL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".add_thing"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.ADDTHING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".calendar"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.CALENDAR" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".thingsTodo"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.THINGSTODO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TimeRecord"
+            android:label="Timescapes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMERECORD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".mscService"
+            android:exported="true"
+            android:process=":remote"/>
+
+        <service
+            android:name=".ringService"
+            android:exported="true"
+            android:process=":remote"/>
+
+    </application>
+
+</manifest>

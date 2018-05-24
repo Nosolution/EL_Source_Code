@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_profile_pomodoro">自定义</string>
+    <string name="pref_profile_5010">常规模式(50/10)</string>
+
+    <string-array name="pref_profiles">
+        <item>@string/pref_profile_pomodoro</item>
+        <item>@string/pref_profile_5010</item>
+    </string-array>
+
+    <string name="pref_vibrate_default">Default</string>
+    <string name="pref_vibrate_sos">SOS</string>
+    <string name="pref_vibrate_heartbeat">Heartbeat</string>
+    <string name="pref_vibrate_jackhammer">Jackhammer</string>
+
+    <string-array name="vibration_pattern_entries">
+        <item>@string/pref_vibrate_default</item>
+        <item>@string/pref_vibrate_sos</item>
+        <item>@string/pref_vibrate_heartbeat</item>
+        <item>@string/pref_vibrate_jackhammer</item>
+    </string-array>
+
+</resources>

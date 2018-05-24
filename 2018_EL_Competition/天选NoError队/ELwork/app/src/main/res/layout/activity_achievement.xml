@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/achievementbackground">
+
+    <Button
+        android:id="@+id/jewel1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/jewel1"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/jewel2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/jewel2"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/jewel3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/jewel3"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/jewel4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/jewel4"
+        android:layout_marginBottom="180dp"/>
+
+    <Button
+        android:id="@+id/jewel5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="240dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/jewel5"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="240dp"
+        android:text="achievement"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+
+    <Button
+        android:id="@+id/jewel1_1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/jewel1_1"
+        />
+
+    <Button
+        android:id="@+id/jewel2_2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="240dp"
+        android:background="@drawable/jewel2_2"
+        />
+    <Button
+        android:id="@+id/jewel3_3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/jewel3_3"
+        />
+
+    <Button
+        android:id="@+id/jewel4_4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/jewel4_4"
+        android:layout_marginBottom="180dp"/>
+
+    <Button
+        android:id="@+id/jewel5_5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="240dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/jewel5_5"
+        />
+
+    <TextView
+        android:id="@+id/achievement"
+
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/ac0"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ac0"/>
+    <Button
+        android:id="@+id/ac1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ac1"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/ac2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ac2"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/ac3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ac3"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/ac4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ac4"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/ac5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ac5"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

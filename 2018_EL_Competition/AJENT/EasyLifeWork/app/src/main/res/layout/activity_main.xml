@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.a11579.easylifework.MainActivity"
+    android:background="@drawable/bgo">
+
+    <TextView
+        android:text="栽培日志"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/history"
+        android:textSize="26sp"
+        android:onClick="onClicktwo"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/work"
+        android:id="@+id/imageView3"
+        android:onClick="onClickfour"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        app:srcCompat="@drawable/note"
+        android:id="@+id/imageView6"
+        android:onClick="onClicktwo"
+        android:layout_alignBottom="@+id/history"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/gs"
+        android:id="@+id/imageView4"
+        android:onClick="onClickthree"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_alignBottom="@+id/reward"
+        android:layout_toRightOf="@+id/history"
+        android:layout_toEndOf="@+id/history" />
+
+    <TextView
+        android:text="开始专注"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:textSize="26sp"
+        android:onClick="onClickfour"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toRightOf="@+id/imageView6"
+        android:layout_toEndOf="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/wenhao"
+        android:id="@+id/intrudoction"
+        android:onClick="onClickfive"
+        android:layout_alignTop="@+id/start"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <TextView
+        android:text="水果世界"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reward"
+        android:textSize="26sp"
+        android:onClick="onClickthree"
+        android:layout_alignBaseline="@+id/history"
+        android:layout_alignBottom="@+id/history"
+        android:layout_toRightOf="@+id/intrudoction"
+        android:layout_toEndOf="@+id/intrudoction" />
+
+    <TextView
+        android:text="使用说明"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView65"
+        android:onClick="onClickfive"
+        android:textSize="26sp"
+        android:layout_alignTop="@+id/intrudoction"
+        android:layout_toRightOf="@+id/intrudoction"
+        android:layout_toEndOf="@+id/intrudoction" />
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="500sp"
+        app:srcCompat="@drawable/wz"
+        android:id="@+id/imageView45"
+        android:layout_marginBottom="91dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

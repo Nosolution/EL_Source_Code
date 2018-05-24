@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeScreen">
+
+
+    <TextView
+        android:id="@+id/guide_word_up" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#07132c"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="完成专注时间" />
+
+    <TextView
+        android:id="@+id/guide_word_down1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#fddb53"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:text="每完成一次计时，您将获得对应的积" />
+
+    <TextView
+        android:id="@+id/guide_word_down22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guide_word_down1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="分.积分可以点亮成就并计入专注历程"
+        android:textColor="#fddb53"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/clock"
+        android:layout_width="190dp"
+        android:layout_height="197dp"
+        android:layout_below="@+id/guide_word_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@drawable/clock" />
+
+
+</RelativeLayout>

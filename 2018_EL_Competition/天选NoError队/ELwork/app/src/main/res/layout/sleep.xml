@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sleeps">
+
+    <com.example.computer.daojishi.CountDownView
+        android:id="@+id/cdv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/sleep_main"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sleep_big"
+        android:text="开始专注"
+        android:textSize="25dp" />
+    <com.example.computer.daojishi.SemicircleMenu
+        android:id="@+id/circlemenu"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/stop"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pause_stop"
+        android:text="暂停"
+        android:textColor="#cccccc" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/pause_stop"
+        android:text="结束"
+        android:textColor="#cccccc" />
+
+    <Button
+        android:id="@+id/continue1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/stop"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/continue1_sleep"
+        android:text="继续" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sports"
+    >
+    <com.example.administrator.elwork.CountDownView
+        android:id="@+id/cdv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/sport_main"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sport_big"
+        android:text="开始专注"
+        android:textSize="25dp"
+        />
+
+    <com.example.administrator.elwork.SemicircleMenu
+        android:id="@+id/circlemenu"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+    <Button
+        android:id="@+id/pause_sport"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/pause_stop"
+        android:text="暂停"
+        android:visibility="gone"
+        android:textColor="#cccccc" />
+
+    <Button
+        android:id="@+id/stop_sport"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/pause_stop"
+        android:text="结束"
+        android:visibility="gone"
+        android:textColor="#cccccc" />
+
+    <Button
+        android:id="@+id/continue_sport"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/stop_sport"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/continue1_sport"
+        android:visibility="gone"
+        android:text="继续" />
+
+
+
+</RelativeLayout>

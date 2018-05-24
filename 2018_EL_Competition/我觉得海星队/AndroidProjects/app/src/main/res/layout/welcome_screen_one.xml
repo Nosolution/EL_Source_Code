@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_background"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeScreen">
+
+    <TextView
+        android:id="@+id/guide_word_up" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#07132c"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="放下手机" />
+
+    <TextView
+        android:id="@+id/guide_word_down1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#fddb53"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="420dp"
+        android:text="通过使用 Timescapes 帮助您专注" />
+
+    <TextView
+        android:id="@+id/guide_word_down12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guide_word_down1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:text="工作，减少手机影响"
+        android:textColor="#fddb53"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/phone_pic"
+        android:layout_width="150dp"
+        android:layout_height="221dp"
+        android:layout_below="@+id/guide_word_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/phone" />
+
+</RelativeLayout>

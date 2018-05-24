@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Moonlight</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="tv_1">添加事件</string>
+    <string name="tv_2">添加时间</string>
+    <string name="tv_3">确认添加</string>
+    <string name="tv_4">事件：</string>
+    <string name="tv_5">Hello!</string>
+    <string name="tv_6">添加代办事项</string>
+    <string name="tv_7">删除事项</string>
+    <string name="tv_x">日程安排</string>
+    <string name="tm_record">时间历程</string>
+    <string name="text">提示</string>
+    <string name="tv_mess">删除?</string>
+    <string name="dismiss">取消</string>
+    <string name="agree">确定</string>
+</resources>
