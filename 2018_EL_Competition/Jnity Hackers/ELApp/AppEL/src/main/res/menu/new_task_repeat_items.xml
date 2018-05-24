@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/monday"
+        android:icon="@drawable/ic_new_task_monday"
+        android:title="周一" />
+    <item
+        android:icon="@drawable/ic_new_task_monday"
+        android:title="周二"/>
+
+
+</menu>

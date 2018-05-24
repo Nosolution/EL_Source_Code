@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ELApp</string>
+    <string name="title_home">主界面</string>
+    <string name="title_dashboard">新建任务</string>
+    <string name="title_notifications">副本界面</string>
+    <string name="taskName">任务名称</string>
+    <string name="taskLevel">紧急程度</string>
+    <string name="titleName">新建任务</string>
+    <string name="help1">金币是用户通过成功完成自己设立的任务，或在副本闯关成功时得到的奖励。不同紧急程度、不同时间长短、不同任务形式、不同的闯关挑战将会获得相应不同的金币奖励</string>
+    <string name="help2">副本系统是用来刷金币的好地方哟～  我们将为您提供不同的随机任务，通过完成相应的挑战即可获得大量的金币哦～</string>
+    <string name="help3">音乐和成就系统都可以解锁 用户可以通过获得的金币来购买新的音乐，通过完成不同的事件来取得相应成就啦～</string>
+    <string name="count">2/5</string>
+    <string name="title_name">成就</string>
+    <string name="remarkHint">                                   请输入内容</string>
+    <string name="remark">备注：</string>
+</resources>

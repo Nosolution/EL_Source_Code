@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <CheckBox
+        android:id="@+id/redCheckbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/redbutton"
+        android:button="@null"
+        android:layout_marginStart="60dp"/>
+
+    <CheckBox
+        android:id="@+id/orangeCheckbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/orangebutton"
+        android:button="@null"
+        android:layout_toRightOf="@id/redCheckbox"
+        android:layout_marginLeft="36dp"/>
+
+    <CheckBox
+        android:id="@+id/pinkCheckbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="36dp"
+        android:background="@drawable/pinkbutton"
+        android:button="@null"
+        android:layout_toRightOf="@id/orangeCheckbox"/>
+
+    <CheckBox
+        android:id="@+id/blueCheckbox"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bluebutton"
+        android:button="@null"
+        android:layout_toRightOf="@id/pinkCheckbox"
+        android:layout_marginLeft="36dp"/>
+
+</RelativeLayout>

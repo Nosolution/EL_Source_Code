@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_coin"
+            android:icon="@mipmap/ic_coins"
+            android:title="金币"
+            app:actionViewClass="android.widget.TextView" />
+        <item
+            android:id="@+id/nav_achievement"
+            android:icon="@mipmap/achievement"
+            android:title="成就" />
+        <item
+            android:id="@+id/nav_greeting"
+            android:icon="@mipmap/greeting"
+            android:title="早晚安问候" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@mipmap/help"
+            android:title="帮助与反馈" />
+
+    </group>
+
+    <item android:title="模式">
+        <menu>
+            <item
+                android:id="@+id/nav_store"
+                android:checkable="true"
+                android:icon="@mipmap/store"
+                android:title="兑换（解锁）" />
+            <item
+                android:id="@+id/nav_setting"
+                android:checkable="true"
+                android:icon="@mipmap/setting"
+                android:title="设置" />
+        </menu>
+    </item>
+
+</menu>

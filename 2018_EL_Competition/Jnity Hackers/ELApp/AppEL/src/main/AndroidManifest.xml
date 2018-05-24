@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lenovo.elapp">
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_of_hxh"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_of_hxh"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="Activitys.MainActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity android:name=".NewTaskActivity" />
+        <activity android:name=".AchievementActivity" />
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".RemindActivity" />
+        <activity android:name=".HelpActivity"></activity>
+
+        <activity android:name="Story.storyMainActivity" />
+        <activity android:name="Story.storyThirdActivity" />
+        <activity android:name="Story.storyFourthActivity" />
+        <activity android:name="Story.storyFifthActivity" />
+        <activity android:name="Story.storySixthActivity" />
+        <activity android:name="Story.storySeventhActivity" />
+        <activity android:name="Story.storySecondActivity" />
+
+        <activity android:name="BackUps.GoodEvening" />
+        <activity android:name="BackUps.GoodMorning" />
+
+        <receiver android:name="BackUps.TaskFailed" />
+
+    </application>
+
+</manifest>

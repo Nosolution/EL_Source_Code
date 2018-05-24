@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="title">#f1f1f5</color>
+    <color name="colorFont">#a2db36</color>
+    <color name="taskName">#ce1e15</color>
+    <color name="taskLevel">#cc0b8170</color>
+    <color name="red">#f9fa1815</color>
+    <color name="orange">#cce44e09</color>
+    <color name="yellow">#f9e6fb00</color>
+    <color name="green">#cc03e40f</color>
+    <color name="toolbar">#064fad</color>
+    <color name="stroke">#00ffee</color>
+    <color name="pink">#FFF2A3CB</color>
+    <color name="darkpink">#CCCC3359</color>
+    <color name="maincolor">#cc70bbdf</color>
+    <color name="maincolor2">#CCF1BF29</color>
+    <color name="background">#ccf4f4f2</color>
+</resources>

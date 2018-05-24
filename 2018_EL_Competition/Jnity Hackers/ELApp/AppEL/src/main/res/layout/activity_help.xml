@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HelpActivity">
+
+    <include
+        layout="@layout/help_title"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="16dp"></include>
+
+
+
+    <TextView
+        android:id="@+id/help_text1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/darkpink"
+        android:text=" |金币的作用" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center|start"
+        android:textSize="20sp"
+        android:text="@string/help1"
+        android:textColor="@color/pink"/>
+
+
+    <TextView
+        android:id="@+id/help_text2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/darkpink"
+        android:text=" |什么是副本" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center|start"
+        android:textSize="20sp"
+        android:text="@string/help2"
+        android:textColor="@color/pink"/>
+
+    <TextView
+        android:id="@+id/help_text3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/darkpink"
+        android:text=" |如何解锁" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center|start"
+        android:textSize="20sp"
+        android:text="@string/help3"
+        android:textColor="@color/pink"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RemindActivity">
+
+    <include
+        layout="@layout/remind_title"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="16dp"></include>
+
+    <Switch
+        android:id="@+id/morning_switch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="早安提醒"
+        android:textColor="@color/orange"
+        android:track="@drawable/ic_new_task_monday"
+        android:textOff="关闭"
+        android:textOn="打开"
+        android:theme="@style/mySwitch"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:gravity="center|start"
+        android:textSize="24sp"
+        android:textColor="@color/taskLevel"/>
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/goodnight_switch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="晚安提醒"
+        android:textColor="@color/orange"
+        android:track="@drawable/ic_new_task_monday"
+        android:textOff="关闭"
+        android:textOn="打开"
+        android:theme="@style/mySwitch"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+
+</LinearLayout>

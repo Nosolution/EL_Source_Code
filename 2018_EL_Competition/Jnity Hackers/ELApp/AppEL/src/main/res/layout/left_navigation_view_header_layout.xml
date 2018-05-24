@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header"
+    android:scaleType="centerCrop"/>
+
+<ImageView
+    android:id="@+id/head_portraint"
+    android:layout_width="96dp"
+    android:layout_height="96dp"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="36dp"
+    android:padding="8dp"
+    android:src="@drawable/head_portrait" />
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:padding="16dp"
+    android:text="昵称：垃圾EL 毁我睡眠"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+</FrameLayout>
