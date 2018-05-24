@@ -1,0 +1,46 @@
+<%- include('header') %>
+
+<div class="ui grid">
+  <div class="four wide column">
+    <a class="avatar avatar-link"
+       href="/data?author=<%= user._id %>"
+      <img class="avatar" src="/img/<%= user.avatar %>">
+    </a>
+  </div>
+
+  <div class="eight wide column">
+    <form class="ui form segment" method="post">
+      <div class="field required">
+        <label>内容</label>
+        <input type="text" name="content">
+      </div>
+      <div class="field required">
+        <label>长度</label>
+        <input type="text" name="length">
+      </div>
+      <div class="field required">
+        <label>年</label>
+        <input type="text" name="year">
+      </div>
+      <div class="field required">
+        <label>月</label>
+        <input type="text" name="month">
+      </div>
+      <div class="field required">
+        <label>日</label>
+        <input type="text" name="day">
+      </div>
+      <div class="field required">
+        <label>时</label>
+        <input type="text" name="hour">
+      </div>
+      <div class="field required">
+        <label>分</label>
+        <input type="text" name="min">
+      </div>
+      <input type="submit" class="ui button" value="发布">
+    </form>
+  </div>
+</div>
+
+<%- include('footer') %>
