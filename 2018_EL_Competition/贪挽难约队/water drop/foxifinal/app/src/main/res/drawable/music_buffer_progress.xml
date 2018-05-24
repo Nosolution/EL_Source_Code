@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--设置黑夜显示大小-->
+    <size
+        android:width="180dp"
+        android:height="180dp" />
+    <!--设置图形颜色-->
+    <gradient
+        android:endColor="#A00080ff"
+        android:gradientRadius="45"
+        android:type="radial" />
+    <!--设置图形边框-->
+    <stroke
+        android:width="2dp"
+        android:color="#A00080ff" />
+
+</shape>

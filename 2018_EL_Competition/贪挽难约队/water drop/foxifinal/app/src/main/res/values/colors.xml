@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="timer">#7fffffff</color>
+    <color name="countdownCircle">#ffffff</color>
+    <color name="startcountdown">#8700a2ff</color>
+    <color name="startcountdown_click">#87007bff</color>
+    <color name="white">#ffffff</color>
+    <color name="reading">#00ffe5</color>
+    <color name="working">#0dff00</color>
+    <color name="valueTextColor">#000000</color>
+</resources>

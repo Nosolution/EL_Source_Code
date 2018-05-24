@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <!--//设置当状态为未点击时的样式-->
+        <shape>
+            <!--//在shaoe内编写自定义的样式-->
+            <solid android:color="#00ffffff"/>
+            <!--//填充的颜色-->
+            <corners android:radius="100dp"/>
+            <!--//边角弧度-->
+            <stroke
+                android:width="2dp"
+                android:color="#ffffff"/>
+        </shape>
+    </item>
+
+</selector>

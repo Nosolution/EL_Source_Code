@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="添加事项"/>
+
+    <item
+        android:id="@+id/todo"
+        android:orderInCategory="100"
+        android:title="待办事项"/>
+
+    <item
+        android:id="@+id/finished"
+        android:orderInCategory="100"
+        android:title="已完成"/>
+
+
+    <item
+        android:id="@+id/failed"
+        android:orderInCategory="100"
+        android:title="超过时限"/>
+
+</menu>

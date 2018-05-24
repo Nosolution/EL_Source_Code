@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/startcountdown_click"/>
+            <corners android:radius="5dp"/>
+            <size android:width="300dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/startcountdown"/>
+            <corners android:radius="5dp"/>
+            <size android:width="300dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/delay_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#a0ffffff"
+    android:elevation="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ddl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c0ffffff"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#4a4a4a"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/changeitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:textColor="#e6000000"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ddlandbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/finish_task"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.4"
+            android:background="@drawable/task_finish" />
+
+        <View
+            android:id="@+id/changeitem"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.4"
+            android:background="@drawable/modify" />
+
+        <View
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:alpha="0.4"
+            android:background="@drawable/circledelete" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/changeVisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:alpha="0.4"
+            android:background="@drawable/detailsitem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout><!--</android.support.v7.widget.CardView>-->
