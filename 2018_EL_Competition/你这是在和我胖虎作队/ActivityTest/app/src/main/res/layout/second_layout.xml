@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backroundd">
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:shape="rectangle"
+        android:text="@string/button_2"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="italic">
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="#00000000"
+        android:text="@string/button_3"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="370dp"
+        android:layout_height="87dp"
+        android:background="#00000000"
+        android:text="@string/button_4"
+        android:textAllCaps="false"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="43dp"
+        android:format="%s"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="@string/Concentration"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="@string/Reset"
+        android:textStyle="italic" />
+</LinearLayout>

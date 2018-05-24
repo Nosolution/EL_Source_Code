@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorbutton">#CC800080</color>
+    <color name="colorloginbutton">#753336FF</color>
+    <color name="colorbuttonstroke">#9C70DB</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name = "color_button">#bbe4d0aa</color>
+    <color name = "color_button_side">#cf9245fa</color>
+    <color name = "color_button_text">#d83f4545</color>
+    <color name = "color_time_rest_start">#616161</color>
+    <color name = "color_time_rest_end">#e6f5f5</color>
+    <color name="primary_light">#f2f2f2</color>
+    <color name="accent">#FF4081</color>
+    <color name="primary_text">#212121</color>
+
+    <color name="gray">#5e6fb7cc</color>
+    <color name="gray_fb">#6fb7cc</color>
+
+    <color name="grayblue">#5e6fb7cc</color>
+
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="empty">#00000000</color>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timg2"
+    tools:context="com.example.administrator.el_done1.login">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:gravity="center_vertical"
+        android:stretchColumns="0,3"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账   号："
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                android:textSize="60px" />
+
+
+            <EditText
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="220px"
+                android:textSize="44px" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20px">
+
+            <TextView />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密  码："
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                android:textSize="60px"
+
+                />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:minWidth="220px"
+                android:textSize="24px" />
+
+            <TextView />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20px">
+
+            <TextView />
+
+            <Button
+                android:id="@+id/login"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="24dp"
+                android:minWidth="220px"
+                android:onClick="log"
+                android:text="登录"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+
+                android:textSize="50px" />
+
+            <Button
+                android:id="@+id/quit"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="24dp"
+                android:minWidth="220px"
+                android:onClick="regist"
+                android:text="注册"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+
+                android:textSize="50px" />
+
+            <TextView />
+        </TableRow>
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,71 @@
+﻿<Window x:Class="EL_Competition.Model2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EL_Competition"
+        mc:Ignorable="d"
+        Title="Model2" Height="1080" Width="1920" WindowState="Maximized" WindowStyle="None" >
+    <Window.Background>
+        <ImageBrush ImageSource="/Resources/timg2.jpg"/>
+    </Window.Background>
+    <Grid MouseMove="Window_MouseMove">
+        <Button Name="exit" Background="Transparent" BorderThickness="0" Content="放弃专注" HorizontalAlignment="Right" Margin="0,0,50,50" VerticalAlignment="Bottom" Width="188" Height="54" FontSize="36" Click="Button_Click"/>
+        <TextBlock TextWrapping="Wrap" Name="conversation" HorizontalAlignment="Center" Margin="0,0,0,140"  Text="" VerticalAlignment="Center" Height="423" Width="778" FontSize="30"/>
+
+
+
+        <Canvas Name="clock2" Width="400" Height="400" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0">
+            <!-- 秒针定义  -->
+
+            <Image Source="pack://application:,,,/Resources\timg.png" Name="biaopan" Width="400" Height="400" Stretch="Uniform"></Image>
+            <Label Name="lab商标" Foreground="Black"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="Auto" Width="Auto" FontSize="13" Canvas.Left="163" Canvas.Top="227" >JackMoon</Label>
+
+            <Label Name="labtt" Foreground="Black"  HorizontalAlignment="Center" FontSize="13" VerticalAlignment="Top" Height="Auto" Width="Auto" Canvas.Left="146" Canvas.Top="254">1987</Label>
+
+            <Rectangle  Name="rectangleSecond" Stroke="Black" Height="200" VerticalAlignment="Center" HorizontalAlignment="Center" Width="5" Canvas.Left="198" Canvas.Top="18">
+
+                <Rectangle.RenderTransform>
+
+                    <RotateTransform x:Name="secondPointer" CenterX="2.5" CenterY="180" Angle="0" />
+
+                </Rectangle.RenderTransform>
+
+            </Rectangle>
+
+            <!-- -->
+
+            <!-- 分钟定义  -->
+
+            <Rectangle Name="rectangleMinute" Stroke="Black" HorizontalAlignment="Center" Width="5" Height="100" Canvas.Left="198" Canvas.Top="99">
+
+                <Rectangle.RenderTransform>
+
+                    <RotateTransform x:Name="minutePointer" CenterX="2.5" CenterY="100" Angle="0" />
+
+                </Rectangle.RenderTransform>
+
+            </Rectangle>
+
+            <!-- -->
+
+            <!-- 时针定义  -->
+
+            <Rectangle  Name="rectangleHour" Stroke="Black" Width="5" Height="80" Canvas.Left="198" Canvas.Top="119">
+
+                <Rectangle.RenderTransform>
+
+                    <RotateTransform x:Name="hourPointer" CenterX="2.5" CenterY="80" Angle="0" />
+
+                </Rectangle.RenderTransform>
+
+            </Rectangle>
+
+            <!---->
+            <Label Content="08:08:08" FontSize="16" Foreground="Black" Height="Auto" HorizontalAlignment="Center" Name="labTime" VerticalAlignment="Bottom" Width="Auto" Canvas.Left="196" Canvas.Top="253" />
+            <Ellipse Fill="Black" Width="10" Height="10" Canvas.Left="195" Canvas.Top="193"></Ellipse>
+        </Canvas>
+        <ProgressBar   Background="Transparent"  Name="progress" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,400,0,0" Height="40" Width="600"></ProgressBar>
+        <TextBlock Name="progresstext" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,510,0,0" Height="60" FontSize="20" Width="600"></TextBlock>
+    </Grid>
+</Window>

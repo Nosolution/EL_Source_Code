@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.el_done1.SettingSelfInformationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="62dp">
+
+        <Button
+            android:id="@+id/set_self_information_back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="←返回" />
+
+        <ImageButton
+            android:id="@+id/set_face_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_self_information_back"
+            android:layout_margin="10dp"
+            android:src="@drawable/change_face__button_image_" />
+
+        <EditText
+            android:id="@+id/set_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/set_face_image"
+            android:layout_alignTop="@id/set_face_image"
+            android:layout_below="@id/set_self_information_back"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@id/set_face_image"
+            android:gravity="center_vertical"
+            android:hint="昵称：" />
+
+        <EditText
+            android:id="@+id/set_motto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/set_name"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:hint="点击设置座右铭"
+            android:maxLines="3"
+            android:minLines="1" />
+
+        <EditText
+            android:id="@+id/set_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_below="@id/set_motto"
+            android:layout_marginVertical="20dp"
+            android:hint="点击设置性别"
+            android:maxLines="3"
+            android:minLines="1" />
+
+        <EditText
+            android:id="@+id/set_profession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+
+            android:layout_below="@id/set_sex"
+            android:layout_marginVertical="20dp"
+            android:hint="点击设置职业" />
+
+        <EditText
+            android:id="@+id/set_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="20dp"
+            android:layout_below="@+id/set_profession"
+
+            android:hint="点击设置邮箱"/>
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="confirm"
+            android:text="确定" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

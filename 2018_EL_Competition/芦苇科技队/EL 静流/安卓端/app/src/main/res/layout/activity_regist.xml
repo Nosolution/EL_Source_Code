@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timg"
+    tools:context="com.example.administrator.el_done1.regist">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        >
+
+        //第一行
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用  户  名："
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200px"
+                android:textSize="30px"
+                />
+        </TableRow>
+
+        //第二行
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密        码："
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="200px"
+                android:textSize="30px"
+                android:inputType="textPassword"
+                />
+        </TableRow>
+        //第三行
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认密码："
+                android:textSize="30px"
+                />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:minWidth="200px"
+                android:textSize="30px" />
+        </TableRow>
+
+        //第四行
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                style="@android:style/Widget.DeviceDefault.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="register"
+                android:text="注 册"
+                android:textSize="30px" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="彩 蛋"
+                android:textSize="30px" />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>

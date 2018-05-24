@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context="com.example.administrator.el_done1.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/centerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        >
+
+        <Button
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="test"
+            android:visibility="invisible"
+            />
+
+        <!--这是时钟-->
+        <com.example.administrator.el_done1.view.DragCircleProgress
+            android:id="@+id/timer"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:visibility="invisible"
+            />
+
+
+        <ImageView
+            android:id="@+id/deskPetView"
+            android:layout_width="60dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/deskPetTalk"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="主人，你想我了吗？"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@drawable/pet_talk_bg"
+            android:layout_above="@id/deskPetView"
+            android:visibility="invisible"
+            />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/button_drawer_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:riv_oval="true"
+            android:src="@drawable/p5"
+            android:onClick="openLeftLayout"
+            />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/button_drawer_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:riv_oval="true"
+            android:src="@drawable/user_treasure_button_simple"
+            android:layout_alignTop="@id/button_drawer_left"
+            android:onClick="openRightLayout"
+            android:layout_alignParentRight="true"
+            />
+
+        <!--底部功能栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <!--这是时钟按钮-->
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/center_timer_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:riv_oval="true"
+                android:src="@mipmap/ic_launcher_round"
+                />
+
+            <!--这是浏览器按钮-->
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/center_browser_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:riv_oval="true"
+                android:src="@drawable/broser_image"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/music_button"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                />
+
+
+            <!--这是音乐按钮-->
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/music_button"
+                app:riv_oval="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/music_bg"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/left_side"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        >
+        <include layout="@layout/activity_el_done1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/treasure_case"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/treasure_case_pet"
+            >
+            <FrameLayout
+                android:id="@+id/treasure_fragment_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </FrameLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/treasure_case_pet"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="桌\n宠"
+            />
+        <!--要不删了装饰吧，有背景和桌宠就行了
+        <Button
+            android:id="@+id/treasure_case_decorations"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/treasure_case_pet"
+            android:text="装\n饰"
+            />
+              ___________________________________-->
+        <Button
+            android:id="@+id/treasure_case_scene"
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/treasure_case_pet"
+            android:text="背\n景"
+            />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

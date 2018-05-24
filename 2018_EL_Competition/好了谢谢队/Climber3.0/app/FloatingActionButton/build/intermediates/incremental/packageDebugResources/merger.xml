@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res"/><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\build\generated\res\rs\debug"/><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\build\generated\res\resValues\debug"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res"><file name="fab_bg_mini" path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res\drawable-xhdpi\fab_bg_mini.png" qualifiers="xhdpi-v4" type="drawable"/><file name="fab_bg_normal" path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res\drawable-xhdpi\fab_bg_normal.png" qualifiers="xhdpi-v4" type="drawable"/><file path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res\values\attrs.xml" qualifiers=""><attr format="color" name="backgroundColor"/><declare-styleable name="FloatingActionButton">
+        <attr format="color" name="fab_colorPressed"/>
+        <attr format="color" name="fab_colorDisabled"/>
+        <attr format="color" name="fab_colorNormal"/>
+        <attr format="reference" name="fab_icon"/>
+        <attr format="enum" name="fab_size">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr format="string" name="fab_title"/>
+        <attr format="boolean" name="fab_stroke_visible"/>
+    </declare-styleable><declare-styleable name="FloatingActionsMenu">
+        <attr format="color" name="fab_addButtonColorPressed"/>
+        <attr format="color" name="fab_addButtonColorNormal"/>
+        <attr format="enum" name="fab_addButtonSize">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr format="color" name="fab_addButtonPlusIconColor"/>
+        <attr format="reference" name="fab_addButton_icon"/>
+        <attr format="float" name="fab_addButton_collapsed_rotation"/>
+        <attr format="float" name="fab_addButton_expanded_rotation"/>
+        <attr format="integer" name="fab_addButton_rotation_duration"/>
+        <attr format="boolean" name="fab_addButtonStrokeVisible"/>
+        <attr format="reference" name="fab_labelStyle"/>
+        <attr format="enum" name="fab_labelsPosition">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr format="enum" name="fab_expandDirection">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable><declare-styleable name="AddFloatingActionButton">
+        <attr format="color" name="fab_plusIconColor"/>
+    </declare-styleable></file><file path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="app_bar_height">200dp</dimen><dimen name="fab_margin">16dp</dimen><dimen name="text_margin">16dp</dimen><dimen name="fab_size_normal">56dp</dimen><dimen name="fab_size_mini">40dp</dimen><dimen name="fab_icon_size">24dp</dimen><dimen name="fab_plus_icon_size">14dp</dimen><dimen name="fab_plus_icon_stroke">2dp</dimen><dimen name="fab_shadow_offset">3dp</dimen><dimen name="fab_shadow_radius">9dp</dimen><dimen name="fab_stroke_width">1dp</dimen><dimen name="fab_actions_spacing">16dp</dimen><dimen name="fab_labels_margin">8dp</dimen></file><file path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res\values\ids.xml" qualifiers=""><item name="fab_expand_menu_button" type="id"/><item name="fab_label" type="id"/></file><file path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">FloatingActionButton</string></file></source><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\build\generated\res\rs\debug"/><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\debug\res"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="E:\Programs\GitWorkspace\Climber3.0\app\FloatingActionButton\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AddFloatingActionButton"><attr format="color" name="fab_plusIconColor"/></declare-styleable><declare-styleable name="FloatingActionsMenu"><attr format="color" name="fab_addButtonColorPressed"/><attr format="color" name="fab_addButtonColorNormal"/><attr format="enum" name="fab_addButtonSize">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr><attr format="color" name="fab_addButtonPlusIconColor"/><attr format="reference" name="fab_addButton_icon"/><attr format="float" name="fab_addButton_collapsed_rotation"/><attr format="float" name="fab_addButton_expanded_rotation"/><attr format="integer" name="fab_addButton_rotation_duration"/><attr format="boolean" name="fab_addButtonStrokeVisible"/><attr format="reference" name="fab_labelStyle"/><attr format="enum" name="fab_labelsPosition">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr><attr format="enum" name="fab_expandDirection">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr></declare-styleable><declare-styleable name="FloatingActionButton"><attr format="color" name="fab_colorPressed"/><attr format="color" name="fab_colorDisabled"/><attr format="color" name="fab_colorNormal"/><attr format="reference" name="fab_icon"/><attr format="enum" name="fab_size">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr><attr format="string" name="fab_title"/><attr format="boolean" name="fab_stroke_visible"/></declare-styleable></configuration></mergedItems></merger>

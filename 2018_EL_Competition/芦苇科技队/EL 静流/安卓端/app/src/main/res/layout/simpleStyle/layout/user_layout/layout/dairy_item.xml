@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/dairy_face_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:riv_oval="true"
+        />
+    <TextView
+        android:id="@+id/dairy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        />
+
+    <!--试试用这个visivility实现一左一右-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/dairy_face_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        app:riv_oval="true"
+        />
+</LinearLayout>

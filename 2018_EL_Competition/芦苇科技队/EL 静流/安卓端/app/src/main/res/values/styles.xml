@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">serif</item>
+    </style>
+    <style name="SIMPLE_THEME" parent="AppTheme">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">serif</item>
+    </style>
+    <style name="OTAKU_THEME" parent="AppTheme">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/otaku_font</item>
+    </style>
+    <style name="PET_THEME" parent="AppTheme">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/pet_font</item>
+    </style>
+    <style name="CustomTheme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:textColor">#398ded</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="SIMPLE" parent="CustomTheme">
+        <item name="android:textColor">#d124ab</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    <style name="OTAKU" parent="CustomTheme">
+        <item name="android:textColor">#f18111</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

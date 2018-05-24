@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36C0805D-9B4C-44B8-A090-51FEC3C22643}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EL_Competition</RootNamespace>
+    <AssemblyName>EL Competition</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bitbug_favicon %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AccountWindow.xaml.cs">
+      <DependentUpon>AccountWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignInWindow.xaml.cs">
+      <DependentUpon>SignInWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AccountWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Model1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Model1Setup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Model2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Model2setup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignInWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model1.xaml.cs">
+      <DependentUpon>Model1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model1Setup.xaml.cs">
+      <DependentUpon>Model1Setup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model2.xaml.cs">
+      <DependentUpon>Model2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model2setup.xaml.cs">
+      <DependentUpon>Model2setup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\WelcomeAni\WelcomeAni %281%29.png" />
+    <Resource Include="Resources\WelcomeAni\WelcomeAni %282%29.png" />
+    <Resource Include="Resources\WelcomeAni\WelcomeAni %283%29.png" />
+    <Resource Include="Resources\WelcomeAni\WelcomeAni %284%29.png" />
+    <Resource Include="Resources\WelcomeAni\WelcomeAni %285%29.png" />
+    <Resource Include="Resources\WelcomeAni\WelcomeAni %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MissAni\MissAni %2810%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2811%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2812%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2813%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2814%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2815%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2816%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2817%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2818%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2819%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %282%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2820%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2821%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2822%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2823%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2824%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2825%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %2826%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %283%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %284%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %285%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %286%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %287%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %288%29.png" />
+    <Resource Include="Resources\MissAni\MissAni %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\MissAni\MissAni %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BoringAni\BoringAni %281%29.png" />
+    <Resource Include="Resources\BoringAni\BoringAni %282%29.png" />
+    <Resource Include="Resources\BoringAni\BoringAni %283%29.png" />
+    <Resource Include="Resources\BoringAni\BoringAni %284%29.png" />
+    <Resource Include="Resources\BoringAni\BoringAni %285%29.png" />
+    <Resource Include="Resources\BoringAni\BoringAni %286%29.png" />
+    <Resource Include="Resources\BoringAni\BoringAni %287%29.png" />
+    <Resource Include="Resources\BoringAni\BoringAni %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Bowlshake\Bowlshake %281%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %2810%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %2811%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %2812%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %2813%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %2814%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %282%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %283%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %284%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %285%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %286%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %287%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %288%29.png" />
+    <Resource Include="Resources\Bowlshake\Bowlshake %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FlourAni\FlourAni %281%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2810%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2811%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2812%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2813%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2814%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2815%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2816%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2817%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2818%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2819%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %282%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2820%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2821%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2822%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2823%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2824%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2825%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2826%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2827%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2828%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2829%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %283%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2830%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2831%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2832%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2833%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2834%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2835%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2836%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2837%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2838%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2839%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %284%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2840%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2841%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2842%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2843%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2844%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2845%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2846%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2847%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2848%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2849%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %285%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2850%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2851%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2852%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2853%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2854%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2855%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2856%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2857%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2858%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2859%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %286%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2860%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2861%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2862%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2863%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2864%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2865%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2866%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2867%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2868%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2869%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %287%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2870%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2871%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2872%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2873%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2874%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2875%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2876%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2877%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2878%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2879%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %288%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2880%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2881%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2882%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2883%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %2884%29.png" />
+    <Resource Include="Resources\FlourAni\FlourAni %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\IdiotAni\IdiotAni %281%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %2810%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %2811%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %2812%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %282%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %283%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %284%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %285%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %286%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %287%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %288%29.png" />
+    <Resource Include="Resources\IdiotAni\IdiotAni %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PuuuAni\PuuuAni %281%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %2810%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %2811%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %2812%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %2813%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %2814%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %282%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %283%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %284%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %285%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %286%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %287%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %288%29.png" />
+    <Resource Include="Resources\PuuuAni\PuuuAni %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ShameAni\ShameAni %281%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %2810%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %2811%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %2812%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %282%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %283%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %284%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %285%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %286%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %287%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %288%29.png" />
+    <Resource Include="Resources\ShameAni\ShameAni %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bitbug_favicon %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\forbidden.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\timg.png" />
+    <Resource Include="Resources\timg2.jpg" />
+    <Resource Include="Resources\timg1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %281%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %2810%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %2811%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %2812%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %2813%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %2814%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %2815%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %282%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %283%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %284%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %285%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %286%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %287%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %288%29.png" />
+    <Resource Include="Resources\ExtendFlour\ExtendFlour %289%29.png" />
+    <Resource Include="Resources\Angry\Angry %281%29.png" />
+    <Resource Include="Resources\Angry\Angry %282%29.png" />
+    <Resource Include="Resources\Angry\Angry %283%29.png" />
+    <Resource Include="Resources\Angry\Angry %284%29.png" />
+    <Resource Include="Resources\Angry\Angry %285%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %281%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %2810%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %2811%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %282%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %283%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %284%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %285%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %286%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %287%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %288%29.png" />
+    <Resource Include="Resources\Nictation\Nictation %289%29.png" />
+    <Resource Include="Resources\broader.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %281%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %2810%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %2811%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %2812%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %2813%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %2814%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %282%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %283%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %284%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %285%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %286%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %287%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %288%29.png" />
+    <Resource Include="Resources\LifthhAni\LifthhAni %289%29.png" />
+    <Resource Include="Resources\cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\temg4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

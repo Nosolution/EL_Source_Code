@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hlxx.climber.thirdpage.EndingActivity">
+    <ImageView
+        android:id="@+id/ending"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/end_background"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/end_to_start"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="11dp"
+            android:background="@drawable/button_shape"
+            android:text="restart"
+            android:alpha="0.7"
+            android:textColor="#ede8f9"/>
+        <Button
+            android:id="@+id/catch_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="4dp"
+            android:layout_above="@+id/end_to_start"
+            android:layout_marginLeft="10dp"
+            android:textSize="11dp"
+            android:background="@drawable/button_shape"
+            android:text="take picture"
+            android:alpha="0.7"
+            android:textColor="#ede8f9"/>
+        <Button
+            android:id="@+id/stone"
+            android:layout_width="100dp"
+            android:layout_height="129dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/stone"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ActivityTest</string>
+    <string name="button_1">开       始</string>
+    <string name="button_2"> 轻音乐</string>
+    <string name="button_3"> 古典音乐</string>
+    <string name="button_4"> 自然音乐</string>
+    <string name="Game">这里有一个让你专注的游戏</string>
+    <string name="Settings">设置</string>
+    <string name="Quit">退出</string>
+    <string name="Reset">归零</string>
+    <string name="Finish">停止</string>
+    <string name="Start">开始</string>
+    <string name="Concentration">专注起来</string>
+    <string name="Rest">休息一下</string>
+</resources>

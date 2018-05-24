@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.el_done1.SettingDeleteActivity">
+
+    <TextView
+        android:id="@+id/set_delete_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="删除数据？"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:layout_above="@id/set_delete_data_true"
+        />
+    <Button
+        android:id="@+id/set_delete_data_true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/set_delete_data_false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:layout_toRightOf="@id/set_delete_data_true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

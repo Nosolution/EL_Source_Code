@@ -1,0 +1,26 @@
+﻿<Window x:Class="EL_Competition.SignInWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EL_Competition"
+        mc:Ignorable="d"
+        Title="SignInWindow" WindowStartupLocation="CenterScreen" Height="430" Width="300" WindowStyle="ToolWindow" MaxHeight="430" MaxWidth="300" MinHeight="430" MinWidth="300">
+    <Grid Name="grid">
+        <Label Height="70" Width="70" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,150" BorderBrush="Purple" BorderThickness="1">
+            <Image Stretch="Uniform" Height="60" Width="60" HorizontalAlignment="Center" Source="pack://application:,,,/Resources/Bowlshake/Bowlshake (1).png" VerticalAlignment="Center" ></Image>
+        </Label>
+
+        <TextBox KeyUp="username_KeyUp" Name="username" HorizontalAlignment="Left" Height="20" Margin="72,173,0,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Width="182"/>
+        <TextBlock  HorizontalAlignment="Left" Height="28" Margin="29,175,0,0" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Top" Width="43"/>
+        <TextBlock   HorizontalAlignment="Left" Height="28" Margin="29,208,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Width="43"/>
+        <TextBox FontSize="14" Foreground="Transparent" KeyUp="password_KeyUp" Name="password"  HorizontalAlignment="Left" Height="20" Margin="72,208,0,0" VerticalAlignment="Top" Width="182" />
+        <TextBox FontSize="14" Foreground="Transparent" Visibility="Hidden" KeyUp="password_Copy_KeyUp" x:Name="password_Copy" HorizontalAlignment="Left" Height="20" Margin="72,241,0,0" VerticalAlignment="Top" Width="182"/>
+        <TextBlock Foreground="Purple" FontSize="30" HorizontalAlignment="Left" Height="48" Margin="18,25,0,0" TextWrapping="Wrap" Text="登陆" VerticalAlignment="Top" Width="135"/>
+        <Button Name="sign" Background="Transparent" FontSize="20" Content="登陆" HorizontalAlignment="Left" Height="29" Margin="76,274,0,0" VerticalAlignment="Top" Width="124" Click="sign_Click" />
+        <Button Name="signnew" Background="Transparent" FontSize="20" Content="新用户注册" HorizontalAlignment="Left" Height="29" Margin="76,308,0,0" VerticalAlignment="Top" Width="124" Click="signnew_Click" />
+        <TextBlock Visibility="Hidden" Name="repeatname" HorizontalAlignment="Left" Height="28" Margin="29,241,0,0" TextWrapping="Wrap" Text="再次确认密码" VerticalAlignment="Top" Width="43"/>
+
+
+    </Grid>
+</Window>

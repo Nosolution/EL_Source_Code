@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.el_done1.FriendAddApplyActivity">
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:rowCount="4"
+    android:layout_weight="10"
+    >
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←返回" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        android:layout_row="1"
+        />
+    <TextView
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:text="name1"
+        />
+    <ImageButton
+        android:src="@mipmap/ic_launcher"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_row="0"/>
+    <ImageButton
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_row="0"
+        android:src="@mipmap/ic_launcher"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_columnWeight="1"
+        android:layout_column="0"
+        android:layout_row="1"
+        />
+    <TextView
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_columnWeight="1"
+        android:text="name2"
+        />
+    <ImageButton
+        android:src="@mipmap/ic_launcher"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:layout_row="1"/>
+    <ImageButton
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:layout_row="1"
+        android:src="@mipmap/ic_launcher"/>
+</GridLayout>
+</android.support.constraint.ConstraintLayout>

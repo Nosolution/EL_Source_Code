@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@mipmap/stone_dialog"
+    android:orientation="vertical"
+    tools:context="com.hlxx.climber.thirdpage.StoneActivity">
+
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:text="写下"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/button_shape"
+            android:textSize="12sp"
+            android:onClick="addItem"/>
+
+        <Button
+            android:id="@+id/out"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="x"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:padding="0dp"
+            android:gravity="center"
+
+            android:background="#302a36"
+            android:textColor="#4c4150"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/user_to_talk"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_toLeftOf="@+id/upload"
+        android:hint="在雨季到来前，写下你想说的话吧"
+        android:maxLength="150"
+        android:maxLines="5"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        android:textSize="13sp" />
+
+    <ListView
+        android:id="@+id/listViewComment"
+        android:layout_width="198dp"
+        android:layout_height="242dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:divider="#00000000"
+        android:dividerHeight="5dp"
+        tools:listitem="@layout/row_list_comment" />
+
+</RelativeLayout>
+
+
+

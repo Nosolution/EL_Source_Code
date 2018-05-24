@@ -1,0 +1,28 @@
+C:\Users\assdd\source\repos\EL Competition\EL Competition\bin\Debug\EL Competition.exe.config
+C:\Users\assdd\source\repos\EL Competition\EL Competition\bin\Debug\EL Competition.exe
+C:\Users\assdd\source\repos\EL Competition\EL Competition\bin\Debug\EL Competition.pdb
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition.csprojResolveAssemblyReference.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\MainWindow.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\App.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition_MarkupCompile.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition_MarkupCompile.lref
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\MainWindow.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition.g.resources
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL_Competition.Properties.Resources.resources
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition.csproj.GenerateResource.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition.csproj.CoreCompileInputs.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition.exe
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition.pdb
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model1Setup.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model1Setup.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model2setup.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model2setup.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model1.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model1.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model2.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\Model2.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\EL Competition_Content.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\SignInWindow.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\SignInWindow.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\AccountWindow.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Debug\AccountWindow.baml

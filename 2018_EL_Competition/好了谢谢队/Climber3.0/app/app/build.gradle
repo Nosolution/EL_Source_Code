@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.hlxx.climber"
+
+        minSdkVersion 21
+
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = ['redirectUriScheme': 'focusclimb://easyauth.callback']
+        }
+        debug {
+            // ...
+            manifestPlaceholders = ['redirectUriScheme': 'focusclimb://easyauth.callback']
+        }
+    }
+    buildToolsVersion '27.0.3'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:support-vector-drawable:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation files('libs/wheelview_1.3.3.jar')
+    implementation project(':library')
+    implementation 'com.android.support:preference-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.microsoft.azure:azure-mobile-android:3.2.0@aar'
+    implementation 'com.github.ismaeltoe:flowlayout:1.0'
+    implementation 'com.ddz.materialdesign:FloatingActionButton:1.0.4'
+   implementation 'com.ruesga.timeline-chart-view:timeline-chart-view:1.0.2'
+    implementation 'codelight.studios:android-smart-login:1.2'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+    implementation 'com.android.support:customtabs:23.0.1'
+    implementation 'com.google.code.gson:gson:2.3'
+    implementation 'com.google.guava:guava:18.0'
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.microsoft.azure:azure-notifications-handler:1.0.1@jar'
+
+}

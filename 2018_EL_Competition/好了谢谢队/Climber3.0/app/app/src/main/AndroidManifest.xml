@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android = "http://schemas.android.com/apk/res/android"
+          xmlns:tools = "http://schemas.android.com/tools"
+          package = "com.hlxx.climber">
+    <uses-permission android:name = "android.permission.VIBRATE" />
+    <uses-permission android:name = "android.permission.INTERNET" />
+    <uses-permission android:name = "android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name = "android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+            android:allowBackup = "true"
+            android:hardwareAccelerated = "false"
+            android:icon = "@mipmap/ic_launcher"
+            android:label = "Climber"
+            android:largeHeap = "true"
+            android:roundIcon = "@mipmap/ic_launcher_round"
+            android:supportsRtl = "true"
+            android:theme = "@style/AppTheme"
+            tools:replace = "android:label">
+        <activity android:name = ".firstpage.TimeSettingActivity"
+                  android:screenOrientation = "portrait" />
+        <activity android:name = "com.microsoft.windowsazure.mobileservices.authentication.RedirectUrlActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="focusclimb"
+                    android:host="easyauth.callback"/>
+            </intent-filter>
+        </activity>
+        <activity android:name = ".secondpage.ClimbingActivity"
+                  android:screenOrientation = "portrait" />
+        <activity android:name = ".thirdpage.EndingActivity"
+                  android:screenOrientation = "portrait" />
+        <activity
+                android:name = ".firstpage.setting.SettingActivity"
+                android:label = "设置" android:screenOrientation = "portrait" />
+        <activity android:name = ".firstpage.setting.ContactUsActivity"
+                  android:parentActivityName=".firstpage.setting.SettingActivity"
+                  android:screenOrientation = "portrait" />
+        <activity android:name = ".thirdpage.StoneActivity"
+                  android:screenOrientation = "portrait"
+                  android:theme = "@style/dialog_custom" />
+        <activity android:name = ".firstpage.setting.HistoryActivity"
+                  android:screenOrientation = "portrait" />
+        <activity android:name = ".zerothpage.SplashActivity"
+                  android:screenOrientation = "portrait">
+            <intent-filter>
+                <action android:name = "android.intent.action.MAIN" />
+                <category android:name = "android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name = ".zerothpage.WelcomeGuideActivity"
+                  android:screenOrientation = "portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+C:\Users\assdd\source\repos\EL Competition\EL Competition\bin\Release\EL Competition.exe.config
+C:\Users\assdd\source\repos\EL Competition\EL Competition\bin\Release\EL Competition.exe
+C:\Users\assdd\source\repos\EL Competition\EL Competition\bin\Release\EL Competition.pdb
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\MainWindow.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model1.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model1Setup.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model2.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model2setup.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\App.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition_MarkupCompile.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition_MarkupCompile.lref
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\MainWindow.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model1.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model1Setup.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model2.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\Model2setup.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition.g.resources
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL_Competition.Properties.Resources.resources
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition.csproj.GenerateResource.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition.csproj.CoreCompileInputs.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition.exe
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition.pdb
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\EL Competition.csprojResolveAssemblyReference.cache
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\SignInWindow.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\SignInWindow.baml
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\AccountWindow.g.cs
+C:\Users\assdd\source\repos\EL Competition\EL Competition\obj\Release\AccountWindow.baml

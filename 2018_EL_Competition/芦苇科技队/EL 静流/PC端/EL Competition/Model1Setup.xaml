@@ -1,0 +1,46 @@
+﻿<Window x:Class="EL_Competition.Model1Setup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EL_Competition"
+        mc:Ignorable="d"
+        Title="专注小精灵" Height="700" Width="400" MinHeight="700" MinWidth="400" MaxHeight="700" MaxWidth="400" WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow">
+    <Grid>
+
+        <Button Name="StartButton" Content="开始专注" HorizontalAlignment="Center" BorderBrush="Purple" BorderThickness="2" Background="Transparent" Margin="0,0,0,30" VerticalAlignment="Bottom" Width="120" Height="37" FontSize="24" Click="StartButton_Click" Grid.Row="1"/>
+        <TextBlock Foreground="Purple" HorizontalAlignment="Left" Height="25" Margin="13,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" FontSize="18" Text="任务时间"/>
+        <ComboBox IsEnabled="False" Name="hour" HorizontalAlignment="Left" Height="19" Margin="111,92,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.133,0.684" >
+
+        </ComboBox>
+        <ComboBox IsEnabled="False" Name="minute" HorizontalAlignment="Left" Height="19" Margin="194,92,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.133,0.684" >
+
+        </ComboBox>
+        <ComboBox IsEnabled="False" Name="second" HorizontalAlignment="Left" Height="19" Margin="281,92,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="0.272,-1.289" >
+
+        </ComboBox>
+        <DatePicker IsEnabled="False" Name="datepicker" HorizontalAlignment="Left" Margin="111,118,0,0" VerticalAlignment="Top" Height="25" Width="165"/>
+        <RadioButton Name="timeset2" Content="专注截至时间" HorizontalAlignment="Left" Margin="11,123,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1"/>
+        <RadioButton Name="timeset1" Content="专注时长" HorizontalAlignment="Left" Margin="11,92,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" />
+        <TextBlock HorizontalAlignment="Left" Height="20" Margin="165,95,0,0" TextWrapping="Wrap" Text="小时" VerticalAlignment="Top" Width="28" RenderTransformOrigin="0.423,0.675"/>
+        <TextBlock HorizontalAlignment="Left" Height="17" Margin="248,94,0,0" TextWrapping="Wrap" Text="分钟" VerticalAlignment="Top" Width="28"/>
+        <TextBlock HorizontalAlignment="Left" Height="13" Margin="335,94,0,0" TextWrapping="Wrap" Text="秒" VerticalAlignment="Top" Width="30"/>
+        <ComboBox IsEnabled="False" Name="datehour"  HorizontalAlignment="Left" Height="19" Margin="111,155,0,0" VerticalAlignment="Top" Width="49"/>
+        <ComboBox IsEnabled="False" Name="dateminte" HorizontalAlignment="Left" Height="19" Margin="194,155,0,0" VerticalAlignment="Top" Width="49"/>
+        <ComboBox IsEnabled="False" Name="datesecond" HorizontalAlignment="Left" Height="19" Margin="281,155,0,0" VerticalAlignment="Top" Width="49"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="335,159,0,0" TextWrapping="Wrap" Text="秒" VerticalAlignment="Top" Width="17" RenderTransformOrigin="-2.696,0.767"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="248,159,0,0" TextWrapping="Wrap" Text="分" VerticalAlignment="Top" Width="17" RenderTransformOrigin="-2.696,0.767"/>
+        <TextBlock HorizontalAlignment="Left" Height="15" Margin="165,159,0,0" TextWrapping="Wrap" Text="时" VerticalAlignment="Top" Width="17" RenderTransformOrigin="-2.696,0.767"/>
+        <TextBlock Foreground="Purple" HorizontalAlignment="Left" Height="24" Margin="11,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" FontSize="18" Text="设置专注期间不能启动的软件游戏"/>
+        <ScrollViewer Name="fileviewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"  HorizontalAlignment="Left" Height="128" Margin="13,322,0,0" VerticalAlignment="Top" Width="352"/>
+        <TextBox Text="在这里添加文件" KeyUp="fileloc_KeyUp" Name="fileloc" HorizontalAlignment="Left" Height="21" Margin="11,227,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="317" TextChanged="fileloc_TextChanged"/>
+        <Button Name="lookup" Content="浏览" HorizontalAlignment="Left" Height="21" Margin="335,227,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click"/>
+        <Button Name="addnew" IsEnabled="False" Content="添加" FontSize="20" HorizontalAlignment="Left" Height="31" Margin="97,253,0,0" VerticalAlignment="Top" Width="179" Click="Button_Click_1"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="13,304,0,0" TextWrapping="Wrap" Text="已添加的文件" VerticalAlignment="Top" Width="94"/>
+        <CheckBox Name="isOpenSmode" Content="打开强力模式" HorizontalAlignment="Left" Margin="10,522,0,0" VerticalAlignment="Top" Height="19" Width="97" />
+        <TextBlock Foreground="Purple" HorizontalAlignment="Left" Height="25" Margin="13,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94" FontSize="18" Text="强力模式"/>
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,485,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="339"><Run Text="打开强力模式会导致在预设时间前"/><Run Text="无法退出专注模式"/><Run Text="，"/><Run Text="不能重设专注时间，无法恢复被禁止的"/><Run Text="游戏或程序"/><Run Text="。"/></TextBlock>
+        <Button Name="back" Click="back_Click" Background="Transparent" Content="《-返回" BorderBrush="Purple" Foreground="Purple" FontSize="17" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="68"/>
+
+    </Grid>
+</Window>
