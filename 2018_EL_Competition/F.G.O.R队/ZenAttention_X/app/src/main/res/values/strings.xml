@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">三秋树</string>
+    <string name="start_attention">开始专注</string>
+    <string name="pause_attention">暂停</string>
+    <string name="continue_attention">继续</string>
+    <string name="add_time">+10min</string>
+    <string name="cancel_attention">长按取消</string>
+    <string name="finish_attention">完成</string>
+    <string name="statistics">统计</string>
+    <string name="about">关于</string>
+    <string name="prompt_change_music">长按可以切换音乐</string>
+
+    <string name="bird">鸟</string>
+    <string name="insect">虫</string>
+    <string name="fish">鱼</string>
+    <string name="rain">雨</string>
+    <string name="custom">自定义</string>
+
+    <string name="set_successfully">设置成功</string>
+    <string name="time_is_up">预设时间到</string>
+    <string name="time">时间</string>
+    <string name="have_been_changed">已切换</string>
+    <string name="count_time_cancel">计时已取消</string>
+
+    <string name="choose_at_least_one_file">至少选择一个文件</string>
+    <string name="choose_music">选择音乐</string>
+    <string name="file_error">文件已损坏或不存在</string>
+
+    <string name="permission_denied">权限被拒绝</string>
+
+    <string name="press_again_to_exit">再按一次退出程序</string>
+
+    <string name="Monday">周一</string>
+    <string name="Tuesday">周二</string>
+    <string name="Wednesday">周三</string>
+    <string name="Thursday">周四</string>
+    <string name="Friday">周五</string>
+    <string name="Saturday">周六</string>
+    <string name="Sunday">周日</string>
+    <string name="today">今天</string>
+
+    <string name="Jan">一月</string>
+    <string name="Feb">二月</string>
+    <string name="Mar">三月</string>
+    <string name="Apr">四月</string>
+    <string name="May">五月</string>
+    <string name="Jun">六月</string>
+    <string name="Jul">七月</string>
+    <string name="Aug">八月</string>
+    <string name="Sep">九月</string>
+    <string name="Oct">十月</string>
+    <string name="Nov">十一月</string>
+    <string name="Dec">十二月</string>
+    <string name="this_month">本月</string>
+
+    <string name="have_not_start_attention">你还没有开始专注</string>
+    <string name="focus_time">专注时间（分钟）</string>
+    <string name="focusTime">专注时间</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+
+
+</resources>

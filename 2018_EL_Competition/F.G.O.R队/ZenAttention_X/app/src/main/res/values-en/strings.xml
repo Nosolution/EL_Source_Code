@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZenAttention</string>
+    <string name="start_attention">Start</string>
+    <string name="pause_attention">Pause</string>
+    <string name="continue_attention">Continue</string>
+    <string name="add_time">+10min</string>
+    <string name="cancel_attention">Cancel</string>
+    <string name="finish_attention">Finish</string>
+    <string name="statistics">Statistics</string>
+    <string name="about">About</string>
+    <string name="prompt_change_music">Long press to change music</string>
+
+    <string name="bird">Bird</string>
+    <string name="insect">Insect</string>
+    <string name="fish">Fish</string>
+    <string name="rain">Rain</string>
+    <string name="custom">Custom</string>
+
+    <string name="set_successfully">Set Successfully</string>
+    <string name="time_is_up">Time is up</string>
+    <string name="time">Time</string>
+    <string name="have_been_changed">Has been changed</string>
+    <string name="count_time_cancel">Has been cancelled</string>
+
+    <string name="choose_at_least_one_file">Choose at least one file</string>
+    <string name="choose_music">Choose music</string>
+    <string name="file_error">The file is damaged or does not exist</string>
+
+    <string name="permission_denied">Permission denied</string>
+
+    <string name="press_again_to_exit">Press again to exit</string>
+
+    <string name="Monday">Mon</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Thursday">Thu</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="Sunday">Sun</string>
+    <string name="today">Today</string>
+
+    <string name="Jan">Jan</string>
+    <string name="Feb">Feb</string>
+    <string name="Mar">Mar</string>
+    <string name="Apr">Apr</string>
+    <string name="May">May</string>
+    <string name="Jun">Jun</string>
+    <string name="Jul">Jul</string>
+    <string name="Aug">Aug</string>
+    <string name="Sep">Sep</string>
+    <string name="Oct">Oct</string>
+    <string name="Nov">Nov</string>
+    <string name="Dec">Dec</string>
+    <string name="this_month">This month</string>
+
+    <string name="have_not_start_attention">You have not start</string>
+    <string name="focus_time">Focus time(min)</string>
+    <string name="focusTime">Focus Time</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+
+
+</resources>
