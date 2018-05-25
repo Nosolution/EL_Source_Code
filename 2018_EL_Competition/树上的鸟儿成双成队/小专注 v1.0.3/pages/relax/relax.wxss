@@ -1,0 +1,56 @@
+.container{
+    background-color:white;
+  height:50vh;
+  margin-bottom:10rpx;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.banner{
+    width:480rpx;
+  height:480rpx;
+}
+.images{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 43.75rpx;
+}
+.info{ 
+  font-weight:400;
+  font-size:30rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.qian{
+  width:100rpx;
+  height:56rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.qiang{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.playbutton{
+  width:100rpx;
+  height:100rpx;
+}
+
+.scrollView{
+  display: flex;
+  flex-direction:row;
+  flex-flow: row wrap;  
+  width:750rpx;
+  justify-content:center;
+  word-break:break-all;
+}
+
+
+

@@ -1,0 +1,18 @@
+<image src='/images/background.jpg' style='z-index:-999; position:fixed;height:100%;width:100%'></image>
+<view class="info" style=' height:733rpx;wieth:750rpx;'>
+    <text style='height:50rpx'></text>
+    <image src='{{srcOfPic}}' style='height:400rpx;width:500rpx;'></image>
+    <text style='height:18rpx'></text>
+    <image src="/images/{{status}}.png" class="playbutton" bindtap='play_pause' style='position:fixed;bottom:49%;'></image>
+</view>
+<view class="info" style='width:750rpx;z-index:0;position:fixed;bottom:0;'>
+      <scroll-view scroll-y="true" style="height: 452rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class="info" scroll-top="{{scrollTop}}">
+        <view class="scrollView">
+          <view wx:for='{{songList}}' bindtap="iconChange" data-the-selected="{{item.name}}" style='width:187.5rpx;height:187.5rpx' >
+            <text decode='{{true}}'>&nbsp;&nbsp;&nbsp;&nbsp;</text>
+            <image src="/images/{{item.name}}-{{item.isSelected}}-{{status}}.png" class="images"></image>
+            <text decode='{{true}}' style='font-size:30rpx;font-weight:200'>&nbsp;&nbsp;&nbsp;{{item.name1}}</text>
+          </view> 
+        </view>
+      </scroll-view>
+</view>

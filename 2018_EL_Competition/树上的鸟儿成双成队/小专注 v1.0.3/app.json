@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/relax/relax"
+  ],
+  "tabBar":{
+    "list":[
+      {
+        "text":"专注",
+        "pagePath":"pages/index/index",
+        "iconPath":"images/专注.png",
+        "selectedIconPath":"images/专注2.png"
+      },
+      {
+        "text": "放松",
+        "pagePath": "pages/relax/relax",
+        "iconPath": "images/放松.png",
+        "selectedIconPath": "images/放松2.png"
+      }
+    ]
+  }
+}

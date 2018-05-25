@@ -1,0 +1,47 @@
+.info{ 
+  font-size:40rpx;
+  font-weight:400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.circle{
+    width: 400rpx;
+    height: 400rpx;
+    border: 5rpx solid #516e41;
+    border-radius: 400px;
+    border-color: #516e41;
+}
+.time{
+  line-height: 80rpx;
+  font-weight:400;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
+.text{
+  height:80rpx;
+  width: 80rpx;
+  font-size: 50rpx;
+  border-width:150rpx;
+  border: 0rpx solid #fff;
+  border-radius: 5px;
+  background:#24936e;
+  color: white;
+}
+.quick{
+  position: fixed;
+  bottom: 3.8%;
+  z-index: 999;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mask{
+  width:0;
+  height: 0;
+}

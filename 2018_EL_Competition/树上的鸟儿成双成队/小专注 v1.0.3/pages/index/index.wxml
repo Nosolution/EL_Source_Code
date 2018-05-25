@@ -1,0 +1,36 @@
+<image src='/images/background.jpg' style='z-index:-999; position:fixed;height:100%;width:100%'></image>
+<view class="info">
+  <text style='height:30rpx'></text>
+  <view  wx:if="{{clockSty}}" class='info'>
+    <picker-view class='circle'indicator-style="height: 20%;" value="{{value}}" mask-class='mask' bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{times}}" class="time">{{item}}</view>
+      </picker-view-column>
+    </picker-view>
+    <text style="height:35rpx"></text>
+  </view>
+  <view  wx:else>
+    <view class="info">
+      <text class="circle"style="font-size:100rpx;"></text>
+      <text style='position:fixed;top:15.5%;font-size:100rpx'>{{time}}</text>
+      <text style="height:35rpx"></text>
+    </view>
+  </view>
+  <view class="info" style='position:fixed;bottom:4%;width:100%;z-index:999;'>
+    <view class='quick' wx:if="{{chooseSize}}" animation='{{animationData}}'>
+      <text style='background:#fff'>将手机屏幕朝下倒扣放在桌面上</text>
+      <text decode="{{true}}" style='background:#fff'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;倒计时会自动开始&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <image src='/images/phone.gif' style='width:515rpx;height:385rpx'></image>
+      <button bindtap='cancelBtn' style='width:30%; background:#a8d8b9;color:#24936e;'>结束吧</button>
+    </view>
+  </view>
+  <view class="info" style='position:fixed;bottom:4%;width:100%;'>
+    <text style='font-weight:400;font-size:40rpx'>让我们放下手机,专注一会儿。</text>
+    <image src='/images/watertree.png' style='height:400rpx;width:500rpx'></image>
+    <button bindtap='startBtn' style='width:30%; background:#a8d8b9;color:#24936e;'>开始吧</button>
+  </view>
+  <text style='height:42rpx'></text>
+</view>
+
+
+
